@@ -1,4 +1,4 @@
-const RESOURCES = [
+let RESOURCES = [
   ["tt-root","Teaching Tool — All files","Teaching Tool","folder","Project root","https://drive.google.com/drive/folders/1rWqZQ3bfW_bFrF3b05gvuURy-pCwc5v7","2026-07-12",["all","root","teaching"]],
   ["academic-root","Academic — All files","Academic","folder","Library root","https://drive.google.com/drive/folders/1RJI-7fzm-Zhd46XZaWl0fNfN3m69cWkd","2026-07-11",["all","root","academic"]],
   ["handbook-071","IB DP Chemistry Handbook — Draft v0.7.1","Teaching Tool","folder","Generated products","https://drive.google.com/drive/folders/1wQtogCItvJOFZ9gnbvPsbYDq3o9R-9Pi","2026-07-16T04:19:42Z",["IB","Chemistry","handbook","teacher","draft"]],
@@ -41,7 +41,7 @@ const RESOURCES = [
   ["pilot-shm-teacher","Quiz 04 — Simple Harmonic Motion — Teacher","Teaching Tool","pdf","Four-Product Pilot","https://drive.google.com/file/d/1Kai-G6inBLDpXHbz4Nb0k72dugBQW8wu/view","2026-07-17T03:37:17Z",["Physics","IB","HL","SHM","simple harmonic motion","teacher","markscheme","quiz","pilot"]]
 ].map(([id,title,source,kind,group,url,created,tags])=>({id,title,source,kind,group,url,created,tags}));
 
-const ICON={folder:"▰",pdf:"PDF",doc:"DOC",sheet:"SHT",json:"{ }"};
+const ICON={folder:"▰",pdf:"PDF",doc:"DOC",sheet:"SHT",slide:"SLD",json:"{ }"};
 const state={query:"",view:"Home",showAll:false,favourites:JSON.parse(localStorage.getItem("teaching-hub-favourites")||"[]")};
 const byId=id=>RESOURCES.find(item=>item.id===id);
 const esc=value=>String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -78,4 +78,13 @@ function bind(){
   const search=document.querySelector("#search"); search.oninput=e=>{const pos=e.target.selectionStart;state.query=e.target.value;render();const next=document.querySelector("#search");next.focus();next.setSelectionRange(pos,pos)};
 }
 document.addEventListener("keydown",event=>{if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==="k"){event.preventDefault();document.querySelector("#search")?.focus()}});
+async function refreshResources(){
+  try{
+    const response=await fetch(`resources.json?v=${Date.now()}`,{cache:"no-store"});
+    if(!response.ok)return;
+    const payload=await response.json();
+    if(Array.isArray(payload.resources)&&payload.resources.length){RESOURCES=payload.resources;render()}
+  }catch{/* Embedded index remains available if automatic refresh is unavailable. */}
+}
 render();
+refreshResources();
