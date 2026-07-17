@@ -1,127 +1,7 @@
 {
-  "generatedAt": "2026-07-17T08:20:03.551043+00:00",
-  "resourceCount": 77,
+  "generatedAt": "2026-07-17T08:48:26.689024+00:00",
+  "resourceCount": 64,
   "resources": [
-    {
-      "id": "drive-1X6ETtIgaIP-mYtSQfjsIueEROYlEH2uo",
-      "title": "IB_DP_Chemistry_2025_Visual_First_Teacher_Revision_Handbook_Draft_v0.7.9_grayscale.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "Generated Products · Draft · IB DP Chemistry Draft v0.7.9 - DR-01c Controlled Draft",
-      "url": "https://drive.google.com/file/d/1X6ETtIgaIP-mYtSQfjsIueEROYlEH2uo/view?usp=drivesdk",
-      "created": "2026-07-17T08:04:11.591Z",
-      "tags": [
-        "Chemistry",
-        "IB",
-        "teacher",
-        "handbook"
-      ]
-    },
-    {
-      "id": "drive-1Q0ffkQEaEVIxX0T0xwlIr_gPjhcQ0o77",
-      "title": "IB_DP_Chemistry_2025_Visual_First_Teacher_Revision_Handbook_Draft_v0.7.9.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "Generated Products · Draft · IB DP Chemistry Draft v0.7.9 - DR-01c Controlled Draft",
-      "url": "https://drive.google.com/file/d/1Q0ffkQEaEVIxX0T0xwlIr_gPjhcQ0o77/view?usp=drivesdk",
-      "created": "2026-07-17T08:04:06.336Z",
-      "tags": [
-        "Chemistry",
-        "IB",
-        "teacher",
-        "handbook"
-      ]
-    },
-    {
-      "id": "drive-1vpNUX9U1Lb_jZibWAlHoJqWbCIdaSTC8",
-      "title": "IB_DP_Chemistry_2025_Visual_First_Teacher_Revision_Handbook_Draft_v0.7.8_grayscale.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "Generated Products · Draft · IB DP Chemistry Draft v0.7.8 - DR-01b Controlled Draft",
-      "url": "https://drive.google.com/file/d/1vpNUX9U1Lb_jZibWAlHoJqWbCIdaSTC8/view?usp=drivesdk",
-      "created": "2026-07-17T07:55:47.596Z",
-      "tags": [
-        "Chemistry",
-        "IB",
-        "teacher",
-        "handbook"
-      ]
-    },
-    {
-      "id": "drive-12elv-HkQ0azogQcqpmPMGjEo-hbFItFM",
-      "title": "IB_DP_Chemistry_2025_Visual_First_Teacher_Revision_Handbook_Draft_v0.7.7_grayscale.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "Generated Products · Draft · IB DP Chemistry Draft v0.7.7 - DR-01a Controlled Draft",
-      "url": "https://drive.google.com/file/d/12elv-HkQ0azogQcqpmPMGjEo-hbFItFM/view?usp=drivesdk",
-      "created": "2026-07-17T07:47:21.228Z",
-      "tags": [
-        "Chemistry",
-        "IB",
-        "teacher",
-        "handbook"
-      ]
-    },
-    {
-      "id": "drive-1yMKbFFYqLj64LGmtNKz0aq-dnpT6EQkW",
-      "title": "IB_DP_Chemistry_2025_Visual_First_Teacher_Revision_Handbook_Draft_v0.7.6_grayscale.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "Generated Products · Draft · IB_DP_Chemistry_2025_Teacher_Revision_Handbook_Draft_v0.7.6_DR_02_Controlled_Draft",
-      "url": "https://drive.google.com/file/d/1yMKbFFYqLj64LGmtNKz0aq-dnpT6EQkW/view?usp=drivesdk",
-      "created": "2026-07-17T07:35:20.225Z",
-      "tags": [
-        "Chemistry",
-        "IB",
-        "teacher",
-        "handbook"
-      ]
-    },
-    {
-      "id": "drive-1UQJ_alcPfB_zYBAk2hXDJ6YecqnD36lT",
-      "title": "IB_DP_Chemistry_2025_Visual_First_Teacher_Revision_Handbook_Draft_v0.7.5_grayscale.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "Generated Products · Draft · IB_DP_Chemistry_2025_Teacher_Revision_Handbook_Draft_v0.7.5_DR_06",
-      "url": "https://drive.google.com/file/d/1UQJ_alcPfB_zYBAk2hXDJ6YecqnD36lT/view?usp=drivesdk",
-      "created": "2026-07-17T07:24:57.967Z",
-      "tags": [
-        "Chemistry",
-        "IB",
-        "teacher",
-        "handbook"
-      ]
-    },
-    {
-      "id": "drive-1RlGBuWde4l9I9or65TVcUyqI7pbhSF6-",
-      "title": "IB_DP_Chemistry_2025_Visual_First_Teacher_Revision_Handbook_Draft_v0.7.4_grayscale.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "Generated Products · Draft · IB_DP_Chemistry_2025_Teacher_Revision_Handbook_Draft_v0.7.4_DR_05b",
-      "url": "https://drive.google.com/file/d/1RlGBuWde4l9I9or65TVcUyqI7pbhSF6-/view?usp=drivesdk",
-      "created": "2026-07-17T07:13:55.774Z",
-      "tags": [
-        "Chemistry",
-        "IB",
-        "teacher",
-        "handbook"
-      ]
-    },
-    {
-      "id": "drive-1Nq0tE2jRtN8-_OkSttiHWsbiMRiea7iK",
-      "title": "IB_DP_Chemistry_2025_Visual_First_Teacher_Revision_Handbook_Draft_v0.7.3_grayscale.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "Generated Products · Draft · IB DP Chemistry 2025 - Visual-First Teacher Revision Handbook - Draft v0.7.3 DR-05a",
-      "url": "https://drive.google.com/file/d/1Nq0tE2jRtN8-_OkSttiHWsbiMRiea7iK/view?usp=drivesdk",
-      "created": "2026-07-17T06:57:09.486Z",
-      "tags": [
-        "Chemistry",
-        "IB",
-        "teacher",
-        "handbook"
-      ]
-    },
     {
       "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
       "title": "01 NTK Master Index",
@@ -129,19 +9,34 @@
       "kind": "sheet",
       "group": "NTK",
       "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
-      "created": "2026-07-17T06:54:33.956Z",
+      "created": "2026-07-17T08:37:52.578Z",
       "tags": [
         "NTK"
       ]
     },
     {
-      "id": "drive-1WwQLoLJmd_c-rfydgrTujKyuyS_cffFh",
-      "title": "IB_DP_Chemistry_2025_Visual_First_Teacher_Revision_Handbook_Draft_v0.7.2_grayscale.pdf",
+      "id": "drive-1G6f3PGLTHbX7V4BchpXMIip2CyFuI8hT",
+      "title": "IB_DP_Chemistry_2025_Visual_First_Teacher_Revision_Handbook_Draft_v0.8.0_grayscale.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "Generated Products · Draft · IB DP Chemistry 2025 - Visual-First Teacher Revision Handbook - Draft v0.7.2 DR-04a",
-      "url": "https://drive.google.com/file/d/1WwQLoLJmd_c-rfydgrTujKyuyS_cffFh/view?usp=drivesdk",
-      "created": "2026-07-17T05:09:38.311Z",
+      "group": "Generated Products · Draft · IB DP Chemistry Draft v0.8.0 - DR-08 DR-03",
+      "url": "https://drive.google.com/file/d/1G6f3PGLTHbX7V4BchpXMIip2CyFuI8hT/view?usp=drivesdk",
+      "created": "2026-07-17T08:33:30.442Z",
+      "tags": [
+        "Chemistry",
+        "IB",
+        "teacher",
+        "handbook"
+      ]
+    },
+    {
+      "id": "drive-19O3eHg4btQRN741SbcGdMh8cSMalNf2M",
+      "title": "IB_DP_Chemistry_2025_Visual_First_Teacher_Revision_Handbook_Draft_v0.8.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "Generated Products · Draft · IB DP Chemistry Draft v0.8.0 - DR-08 DR-03",
+      "url": "https://drive.google.com/file/d/19O3eHg4btQRN741SbcGdMh8cSMalNf2M/view?usp=drivesdk",
+      "created": "2026-07-17T08:33:25.740Z",
       "tags": [
         "Chemistry",
         "IB",
@@ -439,36 +334,6 @@
       ]
     },
     {
-      "id": "drive-1KbB_7VbvaY5Kgll85Ayw7fy0CJSMAVV1",
-      "title": "LEGACY — Quiz 01 — Kinematics & Forces — Student (v1.0)",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Legacy — Superseded Quizzes · LEGACY — Quiz 01 — Kinematics & Forces",
-      "url": "https://drive.google.com/file/d/1KbB_7VbvaY5Kgll85Ayw7fy0CJSMAVV1/view?usp=drivesdk",
-      "created": "2026-07-17T03:32:21.216Z",
-      "tags": [
-        "NTK",
-        "Summer CO",
-        "student",
-        "quiz"
-      ]
-    },
-    {
-      "id": "drive-1y0Zum_DTKkui9BXKi4gEGQHvAVSsmmvg",
-      "title": "LEGACY — Quiz 01 — Kinematics & Forces — Teacher (v1.0)",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Legacy — Superseded Quizzes · LEGACY — Quiz 01 — Kinematics & Forces",
-      "url": "https://drive.google.com/file/d/1y0Zum_DTKkui9BXKi4gEGQHvAVSsmmvg/view?usp=drivesdk",
-      "created": "2026-07-17T03:32:11.859Z",
-      "tags": [
-        "NTK",
-        "Summer CO",
-        "teacher",
-        "quiz"
-      ]
-    },
-    {
       "id": "drive-1n1Ia3jA4AzuS--oNp7coPggEoY8wVtun",
       "title": "Quiz 01 — Thermal Physics — Combined Draft (v1.0)",
       "source": "Teaching Tool",
@@ -696,37 +561,6 @@
       "tags": []
     },
     {
-      "id": "drive-1UOj0HGNZ-DmpEbpGGpnmZNbiTPV-xpKn",
-      "title": "IB_DP_Chemistry_2025_Visual_First_Teacher_Revision_Handbook_Draft_v0.7.1_grayscale.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "Generated Products · Draft · IB DP Chemistry 2025 - Visual-First Teacher Revision Handbook - Draft v0.7.1 RA-R3-4",
-      "url": "https://drive.google.com/file/d/1UOj0HGNZ-DmpEbpGGpnmZNbiTPV-xpKn/view?usp=drivesdk",
-      "created": "2026-07-16T04:21:42.414Z",
-      "tags": [
-        "Chemistry",
-        "IB",
-        "teacher",
-        "handbook"
-      ]
-    },
-    {
-      "id": "drive-1I8g5c6vV84fmVKywPRHSMmxPLTfwpPcR",
-      "title": "IB_DP_Chemistry_2025_Visual_First_Teacher_Revision_Handbook_Draft_v0.7.0_grayscale.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "Generated Products · Draft · IB DP Chemistry 2025 - Visual-First Teacher Revision Handbook - Draft v0.7.0 Complete Repair",
-      "url": "https://drive.google.com/file/d/1I8g5c6vV84fmVKywPRHSMmxPLTfwpPcR/view?usp=drivesdk",
-      "created": "2026-07-16T02:01:02.414Z",
-      "tags": [
-        "Chemistry",
-        "IB",
-        "PL",
-        "teacher",
-        "handbook"
-      ]
-    },
-    {
       "id": "drive-1T4lKSG0UGubffjv3spHAusO7TfHAIvzOV2dxwYI5gdY",
       "title": "00 FINAL HANDOFF STATUS — v0.7.0",
       "source": "Teaching Tool",
@@ -838,36 +672,6 @@
         "Edexcel",
         "AQA",
         "teacher"
-      ]
-    },
-    {
-      "id": "drive-1lZ1bwfsAp23ow8EvZoU6Ax7zw-9l9Y_b",
-      "title": "IB_DP_Chemistry_2025_Visual_First_Highlight_Guided_Teacher_Revision_Handbook_Draft_v0.6.1_grayscale.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "Generated Products · Draft · IB DP Chemistry 2025 - Visual-First Highlight-Guided Teacher Revision Handbook - Draft v0.6.1",
-      "url": "https://drive.google.com/file/d/1lZ1bwfsAp23ow8EvZoU6Ax7zw-9l9Y_b/view?usp=drivesdk",
-      "created": "2026-07-14T15:42:20.450Z",
-      "tags": [
-        "Chemistry",
-        "IB",
-        "teacher",
-        "handbook"
-      ]
-    },
-    {
-      "id": "drive-18DTo2g3eT6fwn6vkCXx1RRZy2nQkh5tT",
-      "title": "IB_DP_Chemistry_2025_Visual_First_Highlight_Guided_Teacher_Revision_Handbook_Draft_v0.6.0_grayscale.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "Generated Products · Draft · IB DP Chemistry 2025 - Visual-First Highlight-Guided Teacher Revision Handbook - Draft v0.6.0",
-      "url": "https://drive.google.com/file/d/18DTo2g3eT6fwn6vkCXx1RRZy2nQkh5tT/view?usp=drivesdk",
-      "created": "2026-07-14T14:46:18.451Z",
-      "tags": [
-        "Chemistry",
-        "IB",
-        "teacher",
-        "handbook"
       ]
     },
     {
