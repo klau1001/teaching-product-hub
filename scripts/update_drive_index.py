@@ -65,9 +65,18 @@ def norm(value: str) -> str:
 
 
 def is_blocked(name: str, path_segments: list[str]) -> bool:
-    if any(norm(segment) in BLOCKED_SEGMENTS for segment in path_segments):
+    normalized_path = [norm(segment) for segment in path_segments]
+    if any(
+        segment in BLOCKED_SEGMENTS or re.match(r"^(legacy|superseded|archive)\b", segment)
+        for segment in normalized_path
+    ):
         return True
     normalized = norm(name)
+    # Check the current item as well as its parents. Drive folder names often
+    # use an em dash, so prefix matching keeps variants such as
+    # "Legacy — Superseded Quizzes" out of the crawl.
+    if normalized in BLOCKED_SEGMENTS or re.match(r"^(legacy|superseded|archive)\b", normalized):
+        return True
     return any(re.search(pattern, normalized) for pattern in BLOCKED_NAME_PATTERNS)
 
 
@@ -138,7 +147,11 @@ def crawl(service, config: dict) -> list[dict]:
 
 def logical_key(item: dict) -> tuple[str, str, str]:
     title = re.sub(r"\.(pdf|docx?|pptx?|xlsx?)$", "", item["title"], flags=re.I)
-    title = re.sub(r"\bv?\d+(?:\.\d+){1,3}\b", "", title, flags=re.I)
+    # Normalize underscores before stripping versions; otherwise names such as
+    # "Draft_v0.7.9_grayscale" retain the version because underscores count as
+    # word characters in regular expressions.
+    title = norm(title)
+    title = re.sub(r"(?<![a-z0-9])v?\d+(?:\.\d+){1,3}(?![a-z0-9])", "", title, flags=re.I)
     title = re.sub(r"\b(?:draft|current|complete repair|ra[-_a-z0-9]+|b\d+)\b", "", title, flags=re.I)
     return item["source"], item["kind"], norm(title)
 
