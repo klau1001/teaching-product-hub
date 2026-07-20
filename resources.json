@@ -1,7 +1,97 @@
 {
-  "generatedAt": "2026-07-19T20:37:43.973548+00:00",
-  "resourceCount": 68,
+  "generatedAt": "2026-07-20T21:00:30.219910+00:00",
+  "resourceCount": 71,
   "resources": [
+    {
+      "id": "drive-1-TmGL_X9Xcu_FCGt_IGD3aGH8Qz0aJ5LKaG9XERiqdI",
+      "title": "HKALE A-Level Chemistry 2010 vs IB DP Chemistry 2025 — Teacher Adaptation Comparison",
+      "source": "Academic",
+      "kind": "doc",
+      "group": "Comparisons · Chemistry",
+      "url": "https://docs.google.com/document/d/1-TmGL_X9Xcu_FCGt_IGD3aGH8Qz0aJ5LKaG9XERiqdI/edit?usp=drivesdk",
+      "created": "2026-07-20T12:06:43.379Z",
+      "tags": [
+        "Chemistry",
+        "IB",
+        "teacher"
+      ]
+    },
+    {
+      "id": "drive-1jJhP5NlO8HSn7zOQLYCBv6xUH6DIACZa",
+      "title": "MOD-C-Exercise-02-Teacher-v1.3.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 02 — Radioactive Decay",
+      "url": "https://drive.google.com/file/d/1jJhP5NlO8HSn7zOQLYCBv6xUH6DIACZa/view?usp=drivesdk",
+      "created": "2026-07-20T08:38:30.281Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1dUUAdJZ17NVOgr3LmnmjMi0RyXLmUAca",
+      "title": "MOD-C-Exercise-02-Student-v1.3.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 02 — Radioactive Decay",
+      "url": "https://drive.google.com/file/d/1dUUAdJZ17NVOgr3LmnmjMi0RyXLmUAca/view?usp=drivesdk",
+      "created": "2026-07-20T08:38:26.587Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1y76T2yrkiJmd9B_Vm2idBbmTJWyyWfM-",
+      "title": "MOD-C-Exercise-01-Teacher-v3.4.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 01 — Spectra, Photons and the Bohr Model",
+      "url": "https://drive.google.com/file/d/1y76T2yrkiJmd9B_Vm2idBbmTJWyyWfM-/view?usp=drivesdk",
+      "created": "2026-07-20T05:04:16.508Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1jaNhe4QpTCL4KJRPVldn4A0uHCG0nRD3",
+      "title": "MOD-C-Exercise-01-Student-v3.4.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 01 — Spectra, Photons and the Bohr Model",
+      "url": "https://drive.google.com/file/d/1jaNhe4QpTCL4KJRPVldn4A0uHCG0nRD3/view?usp=drivesdk",
+      "created": "2026-07-20T05:04:08.707Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
+      "title": "01 NTK Master Index",
+      "source": "Teaching Tool",
+      "kind": "sheet",
+      "group": "NTK",
+      "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
+      "created": "2026-07-20T04:28:57.800Z",
+      "tags": [
+        "NTK"
+      ]
+    },
     {
       "id": "drive-1R7_d5nDjz_0TbCJJImiTs83yNhSuhxo9",
       "title": "IB_DP_Chemistry_2025_Visual_First_Teacher_Revision_Handbook_Controlled_Draft_v1.1.0_grayscale.pdf",
@@ -60,50 +150,6 @@
         "IB",
         "teacher",
         "handbook"
-      ]
-    },
-    {
-      "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
-      "title": "01 NTK Master Index",
-      "source": "Teaching Tool",
-      "kind": "sheet",
-      "group": "NTK",
-      "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
-      "created": "2026-07-17T13:42:37.613Z",
-      "tags": [
-        "NTK"
-      ]
-    },
-    {
-      "id": "drive-1_l34DYCh437-LzH23y40r6Na3fkooi-p",
-      "title": "Exercise 01 — Spectra, Photons and the Bohr Model — Teacher (v1.0)",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 01 — Spectra, Photons and the Bohr Model",
-      "url": "https://drive.google.com/file/d/1_l34DYCh437-LzH23y40r6Na3fkooi-p/view?usp=drivesdk",
-      "created": "2026-07-17T13:37:03.846Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "teacher",
-        "exercise"
-      ]
-    },
-    {
-      "id": "drive-1Pt8yFVotV6htzu6lyCoRA5pSc21j1bmJ",
-      "title": "Exercise 01 — Spectra, Photons and the Bohr Model — Student (v1.0)",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 01 — Spectra, Photons and the Bohr Model",
-      "url": "https://drive.google.com/file/d/1Pt8yFVotV6htzu6lyCoRA5pSc21j1bmJ/view?usp=drivesdk",
-      "created": "2026-07-17T13:36:57.227Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "student",
-        "exercise"
       ]
     },
     {
