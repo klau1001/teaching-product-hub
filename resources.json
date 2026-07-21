@@ -1,7 +1,34 @@
 {
-  "generatedAt": "2026-07-20T21:00:30.219910+00:00",
-  "resourceCount": 71,
+  "generatedAt": "2026-07-21T20:57:58.825532+00:00",
+  "resourceCount": 72,
   "resources": [
+    {
+      "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
+      "title": "01 NTK Master Index",
+      "source": "Teaching Tool",
+      "kind": "sheet",
+      "group": "NTK",
+      "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
+      "created": "2026-07-21T18:17:13.706Z",
+      "tags": [
+        "NTK"
+      ]
+    },
+    {
+      "id": "drive-1Uth24u0LsfYhfhPs9fWEATFHk5U14dviCmEXjt_Lb-8",
+      "title": "Exercise 03 — Mass Defect, Binding Energy, Fission and Fusion — Native Mirror (v2.1)",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 03 — Mass Defect, Binding Energy, Fission and Fusion",
+      "url": "https://docs.google.com/document/d/1Uth24u0LsfYhfhPs9fWEATFHk5U14dviCmEXjt_Lb-8/edit?usp=drivesdk",
+      "created": "2026-07-21T18:16:38.229Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "exercise"
+      ]
+    },
     {
       "id": "drive-1-TmGL_X9Xcu_FCGt_IGD3aGH8Qz0aJ5LKaG9XERiqdI",
       "title": "HKALE A-Level Chemistry 2010 vs IB DP Chemistry 2025 — Teacher Adaptation Comparison",
@@ -78,18 +105,6 @@
         "Summer CO",
         "student",
         "exercise"
-      ]
-    },
-    {
-      "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
-      "title": "01 NTK Master Index",
-      "source": "Teaching Tool",
-      "kind": "sheet",
-      "group": "NTK",
-      "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
-      "created": "2026-07-20T04:28:57.800Z",
-      "tags": [
-        "NTK"
       ]
     },
     {
