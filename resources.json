@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:57:58.825532+00:00",
-  "resourceCount": 72,
+  "generatedAt": "2026-07-22T20:54:54.628789+00:00",
+  "resourceCount": 75,
   "resources": [
     {
       "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
@@ -9,23 +9,103 @@
       "kind": "sheet",
       "group": "NTK",
       "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
-      "created": "2026-07-21T18:17:13.706Z",
+      "created": "2026-07-22T12:40:14.371Z",
       "tags": [
         "NTK"
       ]
     },
     {
-      "id": "drive-1Uth24u0LsfYhfhPs9fWEATFHk5U14dviCmEXjt_Lb-8",
-      "title": "Exercise 03 — Mass Defect, Binding Energy, Fission and Fusion — Native Mirror (v2.1)",
+      "id": "drive-1MN-W9gmsH0koG7F_sgRoBruEtOJgfsQ0o-NFIUGYs6Q",
+      "title": "Exercise 03 — Mass Defect, Binding Energy, Fission and Fusion — Native Mirror (v3.2)",
       "source": "Teaching Tool",
       "kind": "doc",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 03 — Mass Defect, Binding Energy, Fission and Fusion",
-      "url": "https://docs.google.com/document/d/1Uth24u0LsfYhfhPs9fWEATFHk5U14dviCmEXjt_Lb-8/edit?usp=drivesdk",
-      "created": "2026-07-21T18:16:38.229Z",
+      "url": "https://docs.google.com/document/d/1MN-W9gmsH0koG7F_sgRoBruEtOJgfsQ0o-NFIUGYs6Q/edit?usp=drivesdk",
+      "created": "2026-07-22T12:39:33.811Z",
       "tags": [
         "IB",
         "NTK",
         "Summer CO",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1Lb8MpW4lpsg288F9JCqmh6BeprBuBRU1QQR_PCc5w-A",
+      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_NATIVE-MIRROR_v1.7",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
+      "url": "https://docs.google.com/document/d/1Lb8MpW4lpsg288F9JCqmh6BeprBuBRU1QQR_PCc5w-A/edit?usp=drivesdk",
+      "created": "2026-07-22T12:36:57.377Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "quiz"
+      ]
+    },
+    {
+      "id": "drive-1WXszflG9l77vC2eVLDNnI4s-Qbuc0e4M",
+      "title": "2627_PL_PHYS-IBSL_TOPIC-A_EXERCISE-001_TEACHER_v1.5.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · PL · IBSL · Topic A · Exercise 01 — Resolving Vectors in Mechanics",
+      "url": "https://drive.google.com/file/d/1WXszflG9l77vC2eVLDNnI4s-Qbuc0e4M/view?usp=drivesdk",
+      "created": "2026-07-22T08:49:29.000Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "PL",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1OZKXmHlt497cX6wkg7jHNrgrzMtubUoc",
+      "title": "2627_PL_PHYS-IBSL_TOPIC-A_EXERCISE-001_STUDENT_v1.5.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · PL · IBSL · Topic A · Exercise 01 — Resolving Vectors in Mechanics",
+      "url": "https://drive.google.com/file/d/1OZKXmHlt497cX6wkg7jHNrgrzMtubUoc/view?usp=drivesdk",
+      "created": "2026-07-22T08:49:29.000Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "PL",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1iSSUo_Svqdw2gyxe7OEAhdjNN6zJ97sl",
+      "title": "Exercise 02 — Radioactive Decay — Teacher (v1.15)",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 02 — Radioactive Decay",
+      "url": "https://drive.google.com/file/d/1iSSUo_Svqdw2gyxe7OEAhdjNN6zJ97sl/view?usp=drivesdk",
+      "created": "2026-07-22T05:06:02.299Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1Lao5hBZN375L0ag2wrLVOe3zNSm_euel",
+      "title": "Exercise 02 — Radioactive Decay — Student (v1.15)",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 02 — Radioactive Decay",
+      "url": "https://drive.google.com/file/d/1Lao5hBZN375L0ag2wrLVOe3zNSm_euel/view?usp=drivesdk",
+      "created": "2026-07-22T05:05:51.561Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "student",
         "exercise"
       ]
     },
@@ -41,38 +121,6 @@
         "Chemistry",
         "IB",
         "teacher"
-      ]
-    },
-    {
-      "id": "drive-1jJhP5NlO8HSn7zOQLYCBv6xUH6DIACZa",
-      "title": "MOD-C-Exercise-02-Teacher-v1.3.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 02 — Radioactive Decay",
-      "url": "https://drive.google.com/file/d/1jJhP5NlO8HSn7zOQLYCBv6xUH6DIACZa/view?usp=drivesdk",
-      "created": "2026-07-20T08:38:30.281Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "teacher",
-        "exercise"
-      ]
-    },
-    {
-      "id": "drive-1dUUAdJZ17NVOgr3LmnmjMi0RyXLmUAca",
-      "title": "MOD-C-Exercise-02-Student-v1.3.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 02 — Radioactive Decay",
-      "url": "https://drive.google.com/file/d/1dUUAdJZ17NVOgr3LmnmjMi0RyXLmUAca/view?usp=drivesdk",
-      "created": "2026-07-20T08:38:26.587Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "student",
-        "exercise"
       ]
     },
     {
