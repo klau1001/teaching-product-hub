@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T20:54:54.628789+00:00",
-  "resourceCount": 75,
+  "generatedAt": "2026-07-23T20:50:56.710935+00:00",
+  "resourceCount": 82,
   "resources": [
     {
       "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
@@ -9,19 +9,131 @@
       "kind": "sheet",
       "group": "NTK",
       "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
-      "created": "2026-07-22T12:40:14.371Z",
+      "created": "2026-07-23T17:26:56.589Z",
       "tags": [
         "NTK"
       ]
     },
     {
-      "id": "drive-1MN-W9gmsH0koG7F_sgRoBruEtOJgfsQ0o-NFIUGYs6Q",
-      "title": "Exercise 03 — Mass Defect, Binding Energy, Fission and Fusion — Native Mirror (v3.2)",
+      "id": "drive-1Lb8MpW4lpsg288F9JCqmh6BeprBuBRU1QQR_PCc5w-A",
+      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_NATIVE-MIRROR_v2.4",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
+      "url": "https://docs.google.com/document/d/1Lb8MpW4lpsg288F9JCqmh6BeprBuBRU1QQR_PCc5w-A/edit?usp=drivesdk",
+      "created": "2026-07-23T17:26:39.736Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "quiz"
+      ]
+    },
+    {
+      "id": "drive-1xt_p2wUMlTpxxCoSG2eeU6S8CYrmZZXr",
+      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_EQUATION-LIST_v2.4.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
+      "url": "https://drive.google.com/file/d/1xt_p2wUMlTpxxCoSG2eeU6S8CYrmZZXr/view?usp=drivesdk",
+      "created": "2026-07-23T17:20:14.001Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "quiz"
+      ]
+    },
+    {
+      "id": "drive-1iqnkyxbPq508qDj-hvXrd5TbruY7tN6u",
+      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_TEACHER_v2.4.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
+      "url": "https://drive.google.com/file/d/1iqnkyxbPq508qDj-hvXrd5TbruY7tN6u/view?usp=drivesdk",
+      "created": "2026-07-23T17:20:02.724Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "quiz"
+      ]
+    },
+    {
+      "id": "drive-1BIUDq9E9OCwyPB4DkKJfWBd0VaRIMXEC",
+      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_STUDENT_v2.4.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
+      "url": "https://drive.google.com/file/d/1BIUDq9E9OCwyPB4DkKJfWBd0VaRIMXEC/view?usp=drivesdk",
+      "created": "2026-07-23T17:19:44.926Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "student",
+        "quiz"
+      ]
+    },
+    {
+      "id": "drive-1siFPZnCKFDbDqMZA3TYqHwuNIryumNAk",
+      "title": "2627_SCO_PHYS-IG2_MOD-C_QUIZ-002_TEACHER_v1.9.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG2 · MOD C · Quiz · Quiz 02 - Radioactivity, Fission and Fusion - Hard",
+      "url": "https://drive.google.com/file/d/1siFPZnCKFDbDqMZA3TYqHwuNIryumNAk/view?usp=drivesdk",
+      "created": "2026-07-23T17:16:58.102Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "quiz"
+      ]
+    },
+    {
+      "id": "drive-1QdVDTkD0nK3jb5rfZrcnakm49YmV6-Hp",
+      "title": "2627_SCO_PHYS-IG2_MOD-C_QUIZ-002_STUDENT_v1.9.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG2 · MOD C · Quiz · Quiz 02 - Radioactivity, Fission and Fusion - Hard",
+      "url": "https://drive.google.com/file/d/1QdVDTkD0nK3jb5rfZrcnakm49YmV6-Hp/view?usp=drivesdk",
+      "created": "2026-07-23T17:16:44.492Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "student",
+        "quiz"
+      ]
+    },
+    {
+      "id": "drive-1Iyg-hZeT6d28EUlbU0fBH0PcEfVedCtZ",
+      "title": "2627_SCO_PHYS-IBH2_MOD-C_EXERCISE-003_TEACHER_v3.2(1).pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 03 — Mass Defect, Binding Energy, Fission and Fusion",
+      "url": "https://drive.google.com/file/d/1Iyg-hZeT6d28EUlbU0fBH0PcEfVedCtZ/view?usp=drivesdk",
+      "created": "2026-07-23T05:02:54.000Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-11VzEX9ObosVmNoL4plv0GftJzt1WO9xn9Dkm_T3KzJs",
+      "title": "DRAFT Exercise 03 — Mass Defect, Binding Energy, Fission and Fusion — Native Mirror (v3.3)",
       "source": "Teaching Tool",
       "kind": "doc",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 03 — Mass Defect, Binding Energy, Fission and Fusion",
-      "url": "https://docs.google.com/document/d/1MN-W9gmsH0koG7F_sgRoBruEtOJgfsQ0o-NFIUGYs6Q/edit?usp=drivesdk",
-      "created": "2026-07-22T12:39:33.811Z",
+      "url": "https://docs.google.com/document/d/11VzEX9ObosVmNoL4plv0GftJzt1WO9xn9Dkm_T3KzJs/edit?usp=drivesdk",
+      "created": "2026-07-23T02:15:30.740Z",
       "tags": [
         "IB",
         "NTK",
@@ -30,19 +142,15 @@
       ]
     },
     {
-      "id": "drive-1Lb8MpW4lpsg288F9JCqmh6BeprBuBRU1QQR_PCc5w-A",
-      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_NATIVE-MIRROR_v1.7",
-      "source": "Teaching Tool",
-      "kind": "doc",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
-      "url": "https://docs.google.com/document/d/1Lb8MpW4lpsg288F9JCqmh6BeprBuBRU1QQR_PCc5w-A/edit?usp=drivesdk",
-      "created": "2026-07-22T12:36:57.377Z",
+      "id": "drive-1KWaTKGKFh-VdwsEK5tJLAm9nl33X6ztu",
+      "title": "Math AA HL formula booklet-8.pdf",
+      "source": "Academic",
+      "kind": "pdf",
+      "group": "Data Booklets · Mathematics",
+      "url": "https://drive.google.com/file/d/1KWaTKGKFh-VdwsEK5tJLAm9nl33X6ztu/view?usp=drivesdk",
+      "created": "2026-07-23T01:48:48.000Z",
       "tags": [
-        "Physics",
-        "IB",
-        "NTK",
-        "Summer CO",
-        "quiz"
+        "data booklet"
       ]
     },
     {
