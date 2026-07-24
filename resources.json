@@ -1,7 +1,22 @@
 {
-  "generatedAt": "2026-07-23T20:50:56.710935+00:00",
-  "resourceCount": 82,
+  "generatedAt": "2026-07-24T20:55:10.984856+00:00",
+  "resourceCount": 85,
   "resources": [
+    {
+      "id": "drive-1h84-FmMgaO2kaYHZN9_jni-kWG-Dm34M8t9BRBSQDpI",
+      "title": "2627-SCO-PHYS-IBH2-MOD-A-EXERCISE-002 — Native Mirror v1.0",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 - Specific Heat, Latent Heat and Internal Energy",
+      "url": "https://docs.google.com/document/d/1h84-FmMgaO2kaYHZN9_jni-kWG-Dm34M8t9BRBSQDpI/edit?usp=drivesdk",
+      "created": "2026-07-24T19:50:02.840Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "exercise"
+      ]
+    },
     {
       "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
       "title": "01 NTK Master Index",
@@ -9,68 +24,85 @@
       "kind": "sheet",
       "group": "NTK",
       "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
-      "created": "2026-07-23T17:26:56.589Z",
+      "created": "2026-07-24T16:51:38.825Z",
       "tags": [
         "NTK"
       ]
     },
     {
-      "id": "drive-1Lb8MpW4lpsg288F9JCqmh6BeprBuBRU1QQR_PCc5w-A",
-      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_NATIVE-MIRROR_v2.4",
+      "id": "drive-1GgJVAyYSKX0OgoNXVKWZDIY9-scxHcB_",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_EQUATION-LIST_v1.0.pdf",
       "source": "Teaching Tool",
-      "kind": "doc",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
-      "url": "https://docs.google.com/document/d/1Lb8MpW4lpsg288F9JCqmh6BeprBuBRU1QQR_PCc5w-A/edit?usp=drivesdk",
-      "created": "2026-07-23T17:26:39.736Z",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 01 — Thermal Conduction and Radiation · Equation_List",
+      "url": "https://drive.google.com/file/d/1GgJVAyYSKX0OgoNXVKWZDIY9-scxHcB_/view?usp=drivesdk",
+      "created": "2026-07-24T13:50:10.710Z",
       "tags": [
-        "Physics",
         "IB",
         "NTK",
         "Summer CO",
-        "quiz"
+        "exercise",
+        "thermal"
       ]
     },
     {
-      "id": "drive-1xt_p2wUMlTpxxCoSG2eeU6S8CYrmZZXr",
-      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_EQUATION-LIST_v2.4.pdf",
+      "id": "drive-1n_Pqil0NRbSjDUnvSjKdyhxMBjTVaJtv",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_TEACHER_v1.0.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
-      "url": "https://drive.google.com/file/d/1xt_p2wUMlTpxxCoSG2eeU6S8CYrmZZXr/view?usp=drivesdk",
-      "created": "2026-07-23T17:20:14.001Z",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 01 — Thermal Conduction and Radiation",
+      "url": "https://drive.google.com/file/d/1n_Pqil0NRbSjDUnvSjKdyhxMBjTVaJtv/view?usp=drivesdk",
+      "created": "2026-07-24T13:49:59.964Z",
       "tags": [
-        "Physics",
-        "IB",
-        "NTK",
-        "Summer CO",
-        "quiz"
-      ]
-    },
-    {
-      "id": "drive-1iqnkyxbPq508qDj-hvXrd5TbruY7tN6u",
-      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_TEACHER_v2.4.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
-      "url": "https://drive.google.com/file/d/1iqnkyxbPq508qDj-hvXrd5TbruY7tN6u/view?usp=drivesdk",
-      "created": "2026-07-23T17:20:02.724Z",
-      "tags": [
-        "Physics",
         "IB",
         "NTK",
         "Summer CO",
         "teacher",
+        "exercise",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-1FMZ9mRcLSmFkqtVgdtY6ql_EAVC2VWmJ",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_STUDENT_v1.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 01 — Thermal Conduction and Radiation",
+      "url": "https://drive.google.com/file/d/1FMZ9mRcLSmFkqtVgdtY6ql_EAVC2VWmJ/view?usp=drivesdk",
+      "created": "2026-07-24T13:49:21.526Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-1qGPINenPboT4iODTNFaX4LcbhcbRlV6b",
+      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_EQUATION-LIST_v3.2.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
+      "url": "https://drive.google.com/file/d/1qGPINenPboT4iODTNFaX4LcbhcbRlV6b/view?usp=drivesdk",
+      "created": "2026-07-24T07:45:02.856Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
         "quiz"
       ]
     },
     {
-      "id": "drive-1BIUDq9E9OCwyPB4DkKJfWBd0VaRIMXEC",
-      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_STUDENT_v2.4.pdf",
+      "id": "drive-1jwkintWGGDYfsnDL7PVXrZU9Se5qb8s4",
+      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_STUDENT_v3.2.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
-      "url": "https://drive.google.com/file/d/1BIUDq9E9OCwyPB4DkKJfWBd0VaRIMXEC/view?usp=drivesdk",
-      "created": "2026-07-23T17:19:44.926Z",
+      "url": "https://drive.google.com/file/d/1jwkintWGGDYfsnDL7PVXrZU9Se5qb8s4/view?usp=drivesdk",
+      "created": "2026-07-24T07:44:49.371Z",
       "tags": [
         "Physics",
         "IB",
@@ -81,13 +113,30 @@
       ]
     },
     {
-      "id": "drive-1siFPZnCKFDbDqMZA3TYqHwuNIryumNAk",
-      "title": "2627_SCO_PHYS-IG2_MOD-C_QUIZ-002_TEACHER_v1.9.pdf",
+      "id": "drive-18jeXOuIK3QRY7SGKhZw5tNPP-a7PGOaB",
+      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_TEACHER_v3.2.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
+      "url": "https://drive.google.com/file/d/18jeXOuIK3QRY7SGKhZw5tNPP-a7PGOaB/view?usp=drivesdk",
+      "created": "2026-07-24T07:42:38.000Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "quiz"
+      ]
+    },
+    {
+      "id": "drive-1pqJqT9jvT8MdQHGnsAxPLkBq26vqvWxo",
+      "title": "2627_SCO_PHYS-IG2_MOD-C_QUIZ-002_TEACHER_v1.10.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IG2 · MOD C · Quiz · Quiz 02 - Radioactivity, Fission and Fusion - Hard",
-      "url": "https://drive.google.com/file/d/1siFPZnCKFDbDqMZA3TYqHwuNIryumNAk/view?usp=drivesdk",
-      "created": "2026-07-23T17:16:58.102Z",
+      "url": "https://drive.google.com/file/d/1pqJqT9jvT8MdQHGnsAxPLkBq26vqvWxo/view?usp=drivesdk",
+      "created": "2026-07-24T03:26:49.182Z",
       "tags": [
         "NTK",
         "Summer CO",
@@ -96,13 +145,13 @@
       ]
     },
     {
-      "id": "drive-1QdVDTkD0nK3jb5rfZrcnakm49YmV6-Hp",
-      "title": "2627_SCO_PHYS-IG2_MOD-C_QUIZ-002_STUDENT_v1.9.pdf",
+      "id": "drive-10KOmPJ78b-W2qtnCHQ5-6mplzFmKXhxq",
+      "title": "2627_SCO_PHYS-IG2_MOD-C_QUIZ-002_STUDENT_v1.10.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IG2 · MOD C · Quiz · Quiz 02 - Radioactivity, Fission and Fusion - Hard",
-      "url": "https://drive.google.com/file/d/1QdVDTkD0nK3jb5rfZrcnakm49YmV6-Hp/view?usp=drivesdk",
-      "created": "2026-07-23T17:16:44.492Z",
+      "url": "https://drive.google.com/file/d/10KOmPJ78b-W2qtnCHQ5-6mplzFmKXhxq/view?usp=drivesdk",
+      "created": "2026-07-24T03:26:32.583Z",
       "tags": [
         "NTK",
         "Summer CO",
@@ -328,7 +377,7 @@
       "title": "Quiz 01 — Fields & Charged-Particle Motion — Equation List (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD B · Quiz · Quiz 01 — Fields & Charged-Particle Motion · Equation Lists",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD B · Quiz · Quiz 01 — Fields & Charged-Particle Motion · Equation_List",
       "url": "https://drive.google.com/file/d/1t9YKXsm84vOssvErPOqG0BmtLHK1zG7l/view?usp=drivesdk",
       "created": "2026-07-17T04:42:34.885Z",
       "tags": [
@@ -492,7 +541,7 @@
       "title": "Equation List — AQA 7407-7408 (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion · Equation Lists",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion · Equation_List",
       "url": "https://drive.google.com/file/d/1Oyo7Y_IW11HnRmToVEIIy5YaWEutmAGU/view?usp=drivesdk",
       "created": "2026-07-17T03:35:14.276Z",
       "tags": [
@@ -508,7 +557,7 @@
       "title": "Equation List — Cambridge 9702 (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion · Equation Lists",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion · Equation_List",
       "url": "https://drive.google.com/file/d/1looFFmX9ZuqD5qoIEitbxYQxdGehFRjV/view?usp=drivesdk",
       "created": "2026-07-17T03:35:06.103Z",
       "tags": [
@@ -523,7 +572,7 @@
       "title": "Equation List — OCR A H156-H556 (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion · Equation Lists",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion · Equation_List",
       "url": "https://drive.google.com/file/d/1AKvFhcRu-ATBWrrbapWOgFuneXt19_GV/view?usp=drivesdk",
       "created": "2026-07-17T03:34:58.529Z",
       "tags": [
@@ -538,7 +587,7 @@
       "title": "Equation List — OCR B H157-H557 (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion · Equation Lists",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion · Equation_List",
       "url": "https://drive.google.com/file/d/1WdpDn1x8_c-amK5rncqW_cdgt6GxnmQr/view?usp=drivesdk",
       "created": "2026-07-17T03:34:49.132Z",
       "tags": [
@@ -553,7 +602,7 @@
       "title": "Equation List — Pearson GCE 8PH0-9PH0 (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion · Equation Lists",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion · Equation_List",
       "url": "https://drive.google.com/file/d/1ur46zxOkr7B8vJKeaZC_HVHHy4X0SbjZ/view?usp=drivesdk",
       "created": "2026-07-17T03:34:41.770Z",
       "tags": [
@@ -568,7 +617,7 @@
       "title": "Equation List — Pearson IAL XPH11-YPH11 (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion · Equation Lists",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion · Equation_List",
       "url": "https://drive.google.com/file/d/1MUtoktjKKjehgIFoSY_IImIwDt7J1cY0/view?usp=drivesdk",
       "created": "2026-07-17T03:34:33.679Z",
       "tags": [
