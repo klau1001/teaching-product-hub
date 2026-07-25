@@ -1,22 +1,7 @@
 {
-  "generatedAt": "2026-07-24T20:55:10.984856+00:00",
+  "generatedAt": "2026-07-25T20:40:22.840379+00:00",
   "resourceCount": 85,
   "resources": [
-    {
-      "id": "drive-1h84-FmMgaO2kaYHZN9_jni-kWG-Dm34M8t9BRBSQDpI",
-      "title": "2627-SCO-PHYS-IBH2-MOD-A-EXERCISE-002 — Native Mirror v1.0",
-      "source": "Teaching Tool",
-      "kind": "doc",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 - Specific Heat, Latent Heat and Internal Energy",
-      "url": "https://docs.google.com/document/d/1h84-FmMgaO2kaYHZN9_jni-kWG-Dm34M8t9BRBSQDpI/edit?usp=drivesdk",
-      "created": "2026-07-24T19:50:02.840Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "exercise"
-      ]
-    },
     {
       "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
       "title": "01 NTK Master Index",
@@ -24,19 +9,19 @@
       "kind": "sheet",
       "group": "NTK",
       "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
-      "created": "2026-07-24T16:51:38.825Z",
+      "created": "2026-07-25T07:02:21.852Z",
       "tags": [
         "NTK"
       ]
     },
     {
-      "id": "drive-1GgJVAyYSKX0OgoNXVKWZDIY9-scxHcB_",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_EQUATION-LIST_v1.0.pdf",
+      "id": "drive-1OW3t4GvREmJTSJLhhXgYk66JFsYrQyPe",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_EQUATION-LIST_v1.3.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 01 — Thermal Conduction and Radiation · Equation_List",
-      "url": "https://drive.google.com/file/d/1GgJVAyYSKX0OgoNXVKWZDIY9-scxHcB_/view?usp=drivesdk",
-      "created": "2026-07-24T13:50:10.710Z",
+      "url": "https://drive.google.com/file/d/1OW3t4GvREmJTSJLhhXgYk66JFsYrQyPe/view?usp=drivesdk",
+      "created": "2026-07-25T06:57:55.499Z",
       "tags": [
         "IB",
         "NTK",
@@ -46,13 +31,13 @@
       ]
     },
     {
-      "id": "drive-1n_Pqil0NRbSjDUnvSjKdyhxMBjTVaJtv",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_TEACHER_v1.0.pdf",
+      "id": "drive-1wt9PJTWBPwbW7SCAEMcyHHxT2wNIUCYo",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_TEACHER_v1.3.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 01 — Thermal Conduction and Radiation",
-      "url": "https://drive.google.com/file/d/1n_Pqil0NRbSjDUnvSjKdyhxMBjTVaJtv/view?usp=drivesdk",
-      "created": "2026-07-24T13:49:59.964Z",
+      "url": "https://drive.google.com/file/d/1wt9PJTWBPwbW7SCAEMcyHHxT2wNIUCYo/view?usp=drivesdk",
+      "created": "2026-07-25T06:56:50.725Z",
       "tags": [
         "IB",
         "NTK",
@@ -63,13 +48,13 @@
       ]
     },
     {
-      "id": "drive-1FMZ9mRcLSmFkqtVgdtY6ql_EAVC2VWmJ",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_STUDENT_v1.0.pdf",
+      "id": "drive-1pgkPps_iDWMiAgrt2puerpQyT-621UK9",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_STUDENT_v1.3.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 01 — Thermal Conduction and Radiation",
-      "url": "https://drive.google.com/file/d/1FMZ9mRcLSmFkqtVgdtY6ql_EAVC2VWmJ/view?usp=drivesdk",
-      "created": "2026-07-24T13:49:21.526Z",
+      "url": "https://drive.google.com/file/d/1pgkPps_iDWMiAgrt2puerpQyT-621UK9/view?usp=drivesdk",
+      "created": "2026-07-25T06:56:38.577Z",
       "tags": [
         "IB",
         "NTK",
@@ -77,6 +62,21 @@
         "student",
         "exercise",
         "thermal"
+      ]
+    },
+    {
+      "id": "drive-1h84-FmMgaO2kaYHZN9_jni-kWG-Dm34M8t9BRBSQDpI",
+      "title": "2627-SCO-PHYS-IBH2-MOD-A-EXERCISE-002 — Native Mirror v1.2",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 - Specific Heat, Latent Heat and Internal Energy",
+      "url": "https://docs.google.com/document/d/1h84-FmMgaO2kaYHZN9_jni-kWG-Dm34M8t9BRBSQDpI/edit?usp=drivesdk",
+      "created": "2026-07-25T06:55:10.140Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "exercise"
       ]
     },
     {
