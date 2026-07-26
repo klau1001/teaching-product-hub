@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-25T20:40:22.840379+00:00",
-  "resourceCount": 85,
+  "generatedAt": "2026-07-26T20:45:23.298020+00:00",
+  "resourceCount": 87,
   "resources": [
     {
       "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
@@ -9,9 +9,71 @@
       "kind": "sheet",
       "group": "NTK",
       "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
-      "created": "2026-07-25T07:02:21.852Z",
+      "created": "2026-07-26T18:36:24.252Z",
       "tags": [
         "NTK"
+      ]
+    },
+    {
+      "id": "drive-1h84-FmMgaO2kaYHZN9_jni-kWG-Dm34M8t9BRBSQDpI",
+      "title": "2627-SCO-PHYS-IBH2-MOD-A-EXERCISE-002 — Native Mirror current — cover v2.3 handoff pending",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 - Specific Heat, Latent Heat and Internal Energy",
+      "url": "https://docs.google.com/document/d/1h84-FmMgaO2kaYHZN9_jni-kWG-Dm34M8t9BRBSQDpI/edit?usp=drivesdk",
+      "created": "2026-07-26T17:40:45.248Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1CBgu-SvAk6HN_qv18AOg1zJ-xZdKip8_",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-002_EQUATION-LIST_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 - Specific Heat, Latent Heat and Internal Energy · Equation_List",
+      "url": "https://drive.google.com/file/d/1CBgu-SvAk6HN_qv18AOg1zJ-xZdKip8_/view?usp=drivesdk",
+      "created": "2026-07-26T07:44:28.034Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-13y-gR-Pd-dUVl22PfVjShGdyAr0oLPUg",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-002_TEACHER_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 - Specific Heat, Latent Heat and Internal Energy",
+      "url": "https://drive.google.com/file/d/13y-gR-Pd-dUVl22PfVjShGdyAr0oLPUg/view?usp=drivesdk",
+      "created": "2026-07-26T07:41:28.409Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1nzg8KjJuiRNABghOJm_MmfE_PoosoIP4",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-002_STUDENT_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 - Specific Heat, Latent Heat and Internal Energy",
+      "url": "https://drive.google.com/file/d/1nzg8KjJuiRNABghOJm_MmfE_PoosoIP4/view?usp=drivesdk",
+      "created": "2026-07-26T07:39:27.635Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise"
       ]
     },
     {
@@ -62,21 +124,6 @@
         "student",
         "exercise",
         "thermal"
-      ]
-    },
-    {
-      "id": "drive-1h84-FmMgaO2kaYHZN9_jni-kWG-Dm34M8t9BRBSQDpI",
-      "title": "2627-SCO-PHYS-IBH2-MOD-A-EXERCISE-002 — Native Mirror v1.2",
-      "source": "Teaching Tool",
-      "kind": "doc",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 - Specific Heat, Latent Heat and Internal Energy",
-      "url": "https://docs.google.com/document/d/1h84-FmMgaO2kaYHZN9_jni-kWG-Dm34M8t9BRBSQDpI/edit?usp=drivesdk",
-      "created": "2026-07-25T06:55:10.140Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "exercise"
       ]
     },
     {
@@ -659,23 +706,6 @@
         "teacher",
         "exercise",
         "projectile motion"
-      ]
-    },
-    {
-      "id": "drive-1n1Ia3jA4AzuS--oNp7coPggEoY8wVtun",
-      "title": "Quiz 01 — Thermal Physics — Combined Draft (v1.0)",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Quiz · Quiz 01 — Thermal Physics",
-      "url": "https://drive.google.com/file/d/1n1Ia3jA4AzuS--oNp7coPggEoY8wVtun/view?usp=drivesdk",
-      "created": "2026-07-17T03:30:56.299Z",
-      "tags": [
-        "Physics",
-        "IB",
-        "NTK",
-        "Summer CO",
-        "quiz",
-        "thermal"
       ]
     },
     {
