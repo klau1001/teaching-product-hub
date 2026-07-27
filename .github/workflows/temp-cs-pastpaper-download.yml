@@ -1,4 +1,4 @@
-name: Temporary Pearson 4CP0 acquisition diagnostic
+name: Temporary Cambridge 0478 2023-2024 acquisition
 
 on:
   pull_request:
@@ -11,72 +11,71 @@ permissions:
 jobs:
   acquire:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
-      - name: Probe Pearson public and secure routes
+      - name: Download and validate Cambridge 0478 source files
         shell: bash
         run: |
           set -uo pipefail
-          mkdir -p out/valid out/diagnostic
-          landing='https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses/international-gcse-computer-science-2017.coursematerials.html'
-          curl -L --max-time 120 -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150 Safari/537.36' -c out/cookies.txt -o out/landing.html "$landing" || true
-          printf 'status\tfilename\tsize\tsha256\turl\n' > out/probe_status.tsv
+          for year in 2023 2024; do
+            mkdir -p "out/0478/$year/march" "out/0478/$year/may-june" "out/0478/$year/oct-nov"
+          done
+          printf 'status\tyear\tsession\tfilename\tsize\tsha256\turl\n' > out/acquisition_status.tsv
 
-          probe() {
-            local name="$1" kind="$2" url="$3" tag="$4"
-            local body="out/diagnostic/${name}.${tag}.body"
-            local hdr="out/diagnostic/${name}.${tag}.headers"
-            curl -L --retry 2 --retry-all-errors --connect-timeout 20 --max-time 180 \
-              -A 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/150 Safari/537.36' \
-              -H 'Accept: application/pdf,application/zip,application/octet-stream;q=0.9,*/*;q=0.8' \
-              -H 'Accept-Language: en-GB,en;q=0.9' \
-              -H "Referer: $landing" -b out/cookies.txt -c out/cookies.txt \
-              -D "$hdr" -o "$body" "$url" || true
-            local size=0; [ -f "$body" ] && size=$(stat -c%s "$body")
-            local ok=0
-            if [ "$kind" = pdf ] && [ -f "$body" ] && head -c 5 "$body" | grep -q '%PDF-' && [ "$size" -gt 10000 ]; then ok=1; fi
-            if [ "$kind" = zip ] && [ -f "$body" ] && unzip -tq "$body" >/dev/null 2>&1 && [ "$size" -gt 1000 ]; then ok=1; fi
-            if [ "$ok" = 1 ]; then
-              cp "$body" "out/valid/$name"
-              printf 'PASS\t%s\t%s\t%s\t%s\n' "$name" "$size" "$(sha256sum "$body" | cut -d' ' -f1)" "$url" >> out/probe_status.tsv
+          download_pdf() {
+            local year="$1" session="$2" dir="$3" name="$4" url="$5"
+            local tmp="$dir/$name.part" dst="$dir/$name"
+            if curl -fL --retry 3 --retry-all-errors --connect-timeout 20 --max-time 180 \
+              -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36' \
+              -o "$tmp" "$url"; then
+              if head -c 5 "$tmp" | grep -q '%PDF-' && [ "$(stat -c%s "$tmp")" -gt 10000 ]; then
+                mv "$tmp" "$dst"
+                printf 'PASS\t%s\t%s\t%s\t%s\t%s\t%s\n' "$year" "$session" "$name" "$(stat -c%s "$dst")" "$(sha256sum "$dst" | cut -d' ' -f1)" "$url" >> out/acquisition_status.tsv
+              else
+                printf 'FAIL_INVALID_PDF\t%s\t%s\t%s\t%s\t-\t%s\n' "$year" "$session" "$name" "$(stat -c%s "$tmp" 2>/dev/null || echo 0)" "$url" >> out/acquisition_status.tsv
+                rm -f "$tmp"
+              fi
             else
-              printf 'FAIL\t%s\t%s\t-\t%s\n' "$name" "$size" "$url" >> out/probe_status.tsv
-              file "$body" > "out/diagnostic/${name}.${tag}.file.txt" 2>&1 || true
-              head -c 2000 "$body" > "out/diagnostic/${name}.${tag}.preview.txt" 2>/dev/null || true
+              printf 'FAIL_DOWNLOAD\t%s\t%s\t%s\t0\t-\t%s\n' "$year" "$session" "$name" "$url" >> out/acquisition_status.tsv
+              rm -f "$tmp"
             fi
           }
 
-          pub1='https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Computer-science/2017/Exam-materials'
-          pub2='https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/computer-science/2017/Exam-materials'
-          sec='https://qualifications.pearson.com/content/dam/secure/silver/all-uk-and-international/international-gcse/computer-science/2017/exam-materials'
+          base='https://xtrapapers.co/papers/caie/igcse/computer-science-0478'
+          for y in 23 24; do
+            year="20$y"
+            for f in "0478_m${y}_qp_12.pdf" "0478_m${y}_ms_12.pdf" "0478_m${y}_qp_22.pdf" "0478_m${y}_ms_22.pdf"; do
+              download_pdf "$year" "March $year" "out/0478/$year/march" "$f" "$base/${year}-march/$f/download"
+            done
+            for c in 11 12 13 21 22 23; do
+              for kind in qp ms; do
+                f="0478_s${y}_${kind}_${c}.pdf"
+                download_pdf "$year" "May-June $year" "out/0478/$year/may-june" "$f" "$base/${year}-may-june/$f/download"
+              done
+            done
+            for c in 11 12 13 21 22 23; do
+              for kind in qp ms; do
+                f="0478_w${y}_${kind}_${c}.pdf"
+                download_pdf "$year" "October-November $year" "out/0478/$year/oct-nov" "$f" "$base/${year}-oct-nov/$f/download"
+              done
+            done
+          done
 
-          for candidate in 4cp0-01-que-20250509.pdf 4cp0-01-que-20250510.pdf; do
-            probe '4cp0-01-que-20250509.pdf' pdf "$pub1/$candidate" "pub1-${candidate}"
-            probe '4cp0-01-que-20250509.pdf' pdf "$pub2/$candidate" "pub2-${candidate}"
-            probe '4cp0-01-que-20250509.pdf' pdf "$sec/$candidate" "secure-${candidate}"
-          done
-          for candidate in 4cp0-01-rms-20250821.pdf 4cp0-01-rms-20250826.pdf; do
-            probe '4cp0-01-rms-20250821.pdf' pdf "$pub1/$candidate" "pub1-${candidate}"
-            probe '4cp0-01-rms-20250821.pdf' pdf "$pub2/$candidate" "pub2-${candidate}"
-            probe '4cp0-01-rms-20250821.pdf' pdf "$sec/$candidate" "secure-${candidate}"
-          done
-          for candidate in 4cp0-02-que-20250605.zip 4cp0-02-que-20250610.zip; do
-            probe '4cp0-02-que-20250605.zip' zip "$pub1/$candidate" "pub1-${candidate}"
-            probe '4cp0-02-que-20250605.zip' zip "$pub2/$candidate" "pub2-${candidate}"
-            probe '4cp0-02-que-20250605.zip' zip "$sec/$candidate" "secure-${candidate}"
-          done
-          for candidate in 4cp0-02-rms-20250821.zip 4cp0-02-rms-20250826.zip; do
-            probe '4cp0-02-rms-20250821.zip' zip "$pub1/$candidate" "pub1-${candidate}"
-            probe '4cp0-02-rms-20250821.zip' zip "$pub2/$candidate" "pub2-${candidate}"
-            probe '4cp0-02-rms-20250821.zip' zip "$sec/$candidate" "secure-${candidate}"
-          done
-          cat out/probe_status.tsv
+          find out -type f -name '*.pdf' -print0 | sort -z | xargs -0 -r sha256sum > out/SHA256SUMS.txt
+          echo '--- acquisition status ---'
+          column -ts $'\t' out/acquisition_status.tsv || cat out/acquisition_status.tsv
+          pass=$(awk -F '\t' 'NR>1 && $1=="PASS"{n++} END{print n+0}' out/acquisition_status.tsv)
+          fail=$(awk -F '\t' 'NR>1 && $1!="PASS"{n++} END{print n+0}' out/acquisition_status.tsv)
+          echo "PASS count: $pass"
+          echo "FAIL count: $fail"
+          test "$pass" -eq 56
+          test "$fail" -eq 0
 
-      - name: Upload diagnostic artifact
+      - name: Upload acquisition artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: pearson-4cp0-2025-diagnostic
+          name: cambridge-0478-2023-2024
           path: out/
           if-no-files-found: error
           retention-days: 1
