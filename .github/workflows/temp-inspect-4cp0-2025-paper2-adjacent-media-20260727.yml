@@ -1,0 +1,60 @@
+name: Temporary inspect Pearson 4CP0 2025 Paper 2 adjacent media
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Install PDF tools
+        shell: bash
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+
+      - name: Fetch media metadata and PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out/meta out/pdf out/text
+          base='https://www.exampaperspractice.co.uk'
+          ua='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/131 Safari/537.36'
+          : > out/results.tsv
+          for id in 142060 142061 142062 142063 142064 142065 142066 142067 142068 142069 142070 142071 142072 142073 142074 142075 142076 142077; do
+            meta="out/meta/$id.json"
+            if ! curl --fail --location --max-time 30 -A "$ua" "$base/wp-json/wp/v2/media/$id" -o "$meta"; then
+              echo -e "$id\tMETA_FAIL" >> out/results.tsv
+              rm -f "$meta"
+              continue
+            fi
+            url=$(python -c 'import json,sys; print(json.load(open(sys.argv[1])).get("source_url") or "")' "$meta")
+            slug=$(python -c 'import json,sys; print(json.load(open(sys.argv[1])).get("slug") or "")' "$meta")
+            mime=$(python -c 'import json,sys; print(json.load(open(sys.argv[1])).get("mime_type") or "")' "$meta")
+            echo -e "$id\t$slug\t$mime\t$url" >> out/results.tsv
+            if [[ "$mime" == application/pdf ]] && [[ -n "$url" ]]; then
+              dest="out/pdf/${id}_${slug}.pdf"
+              curl --fail --location --max-time 120 -A "$ua" "$url" -o "$dest"
+              test "$(head -c 5 "$dest")" = '%PDF-'
+              pdfinfo "$dest" > "out/text/${id}_${slug}.pdfinfo.txt"
+              pdftotext -f 1 -l 3 -layout "$dest" "out/text/${id}_${slug}.txt" || true
+              sha256sum "$dest" >> out/SHA256SUMS.txt
+            fi
+          done
+          cat out/results.tsv
+          for f in out/text/*.txt; do echo "===== $f ====="; head -n 80 "$f"; done
+
+      - name: Upload inspection artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pearson-4cp0-2025-paper2-adjacent-media-inspection
+          path: out/
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 0
