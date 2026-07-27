@@ -20,7 +20,7 @@ jobs:
           set -euo pipefail
           mkdir -p out
           cat \
-            tmp/upee_0478_s25_22_batch01_response_space_mapping_r1.zip.b64 \
+            tmp/upee_0478_s25_22_batch01_response_space_mapping_r1.zip.b64.part00 \
             tmp/upee_0478_s25_22_batch01_response_space_mapping_r1.zip.b64.part01 \
             tmp/upee_0478_s25_22_batch01_response_space_mapping_r1.zip.b64.part02 \
             tmp/upee_0478_s25_22_batch01_response_space_mapping_r1.zip.b64.part03 \
