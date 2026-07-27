@@ -1,7 +1,386 @@
 {
-  "generatedAt": "2026-07-26T20:45:23.298020+00:00",
-  "resourceCount": 87,
+  "generatedAt": "2026-07-27T21:02:07.511116+00:00",
+  "resourceCount": 105,
   "resources": [
+    {
+      "id": "drive-1je8sAVOdozI31b2-TPGglO_rAGZGgkSA",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_EQUATION-LIST_v1.3.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 03 — B.3 Gas Laws · Equation_List",
+      "url": "https://drive.google.com/file/d/1je8sAVOdozI31b2-TPGglO_rAGZGgkSA/view?usp=drivesdk",
+      "created": "2026-07-27T17:21:01.240Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1bipczkNPBLgk-ZLffO6iUvHLTjsTKIS9",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_TEACHER_v1.3.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 03 — B.3 Gas Laws",
+      "url": "https://drive.google.com/file/d/1bipczkNPBLgk-ZLffO6iUvHLTjsTKIS9/view?usp=drivesdk",
+      "created": "2026-07-27T17:19:59.004Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1nilGLI7e3ov8y1P1Cfc0fLqPc9VJuYTE",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_STUDENT_v1.3.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 03 — B.3 Gas Laws",
+      "url": "https://drive.google.com/file/d/1nilGLI7e3ov8y1P1Cfc0fLqPc9VJuYTE/view?usp=drivesdk",
+      "created": "2026-07-27T17:19:46.300Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1dOcrDgATPLt1-dE_rAvdCSYxGcEiZuf-",
+      "title": "IBDP-PHY-A2-Teaching-Note-v2.0-Teacher-Delivery-Grayscale.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "Generated Products · Teaching Notes - Production Pilots · IBDP-PHY-A2-Teaching-Note-v2.0-PILOT",
+      "url": "https://drive.google.com/file/d/1dOcrDgATPLt1-dE_rAvdCSYxGcEiZuf-/view?usp=drivesdk",
+      "created": "2026-07-27T16:24:29.044Z",
+      "tags": [
+        "IB",
+        "teacher"
+      ]
+    },
+    {
+      "id": "drive-1JpJrmHbIhGRhHZ07GrD-FZRIRLsg5d8u",
+      "title": "IBDP-PHY-A2-Teaching-Note-v2.0-Teacher-Delivery.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "Generated Products · Teaching Notes - Production Pilots · IBDP-PHY-A2-Teaching-Note-v2.0-PILOT",
+      "url": "https://drive.google.com/file/d/1JpJrmHbIhGRhHZ07GrD-FZRIRLsg5d8u/view?usp=drivesdk",
+      "created": "2026-07-27T16:24:17.602Z",
+      "tags": [
+        "IB",
+        "teacher"
+      ]
+    },
+    {
+      "id": "drive-1PEgSISqzIYELCdrJU7qJunH_b9zeY4RL",
+      "title": "IBDP-PHY-A2-Teaching-Note-v2.0-Teacher-Answer-Grayscale.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "Generated Products · Teaching Notes - Production Pilots · IBDP-PHY-A2-Teaching-Note-v2.0-PILOT",
+      "url": "https://drive.google.com/file/d/1PEgSISqzIYELCdrJU7qJunH_b9zeY4RL/view?usp=drivesdk",
+      "created": "2026-07-27T16:23:50.187Z",
+      "tags": [
+        "IB",
+        "teacher"
+      ]
+    },
+    {
+      "id": "drive-1FWzlLampu9ODV_uv2IoQ3E9D6MPLvWQ3",
+      "title": "IBDP-PHY-A2-Teaching-Note-v2.0-Teacher-Answer.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "Generated Products · Teaching Notes - Production Pilots · IBDP-PHY-A2-Teaching-Note-v2.0-PILOT",
+      "url": "https://drive.google.com/file/d/1FWzlLampu9ODV_uv2IoQ3E9D6MPLvWQ3/view?usp=drivesdk",
+      "created": "2026-07-27T16:23:23.011Z",
+      "tags": [
+        "IB",
+        "teacher"
+      ]
+    },
+    {
+      "id": "drive-1jREy-rQZFoOzit0dpoHAb7Dd5bmZ7Jzy",
+      "title": "IBDP-PHY-A2-Teaching-Note-v2.0-Learner-Grayscale.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "Generated Products · Teaching Notes - Production Pilots · IBDP-PHY-A2-Teaching-Note-v2.0-PILOT",
+      "url": "https://drive.google.com/file/d/1jREy-rQZFoOzit0dpoHAb7Dd5bmZ7Jzy/view?usp=drivesdk",
+      "created": "2026-07-27T16:22:48.439Z",
+      "tags": [
+        "IB"
+      ]
+    },
+    {
+      "id": "drive-1QV4tofT-EF3rgRNu8lwhQ60BQA_tMMQ8",
+      "title": "IBDP-PHY-A2-Teaching-Note-v2.0-Learner.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "Generated Products · Teaching Notes - Production Pilots · IBDP-PHY-A2-Teaching-Note-v2.0-PILOT",
+      "url": "https://drive.google.com/file/d/1QV4tofT-EF3rgRNu8lwhQ60BQA_tMMQ8/view?usp=drivesdk",
+      "created": "2026-07-27T16:22:33.166Z",
+      "tags": [
+        "IB"
+      ]
+    },
+    {
+      "id": "drive-1tsNQnvOI5Twe4FKkSibMsymJr0iC1fzC",
+      "title": "2627_SCO_PHYS-IG1_MOD-A-EXERCISE-001_TEACHER_v1.2.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Exercise · Exercise 01 — Density and Pressure",
+      "url": "https://drive.google.com/file/d/1tsNQnvOI5Twe4FKkSibMsymJr0iC1fzC/view?usp=drivesdk",
+      "created": "2026-07-27T12:42:05.757Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1rCu_Z5SHneA3fdm3O0kZF8OsU3ZsK5Qn",
+      "title": "2627_SCO_PHYS-IG1_MOD-A-EXERCISE-001_STUDENT_v1.2.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Exercise · Exercise 01 — Density and Pressure",
+      "url": "https://drive.google.com/file/d/1rCu_Z5SHneA3fdm3O0kZF8OsU3ZsK5Qn/view?usp=drivesdk",
+      "created": "2026-07-27T12:41:52.429Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1mXXVAEolzvy3soMofoliL8_DZtDmh6_k",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_QUIZ-001_EQUATION-LIST_v3.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Quiz · Quiz 01 — Thermal Physics · Equation_List",
+      "url": "https://drive.google.com/file/d/1mXXVAEolzvy3soMofoliL8_DZtDmh6_k/view?usp=drivesdk",
+      "created": "2026-07-27T09:29:43.384Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "quiz",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-1Dn-hQWeQlS_cXo1PD787s9toQskdQ1yF",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_QUIZ-001_TEACHER_v3.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Quiz · Quiz 01 — Thermal Physics",
+      "url": "https://drive.google.com/file/d/1Dn-hQWeQlS_cXo1PD787s9toQskdQ1yF/view?usp=drivesdk",
+      "created": "2026-07-27T09:28:21.577Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "quiz",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-1WPnLF8-Wwz2yxXzocLy5hhPoCf9AJg0V",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_QUIZ-001_STUDENT_v3.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Quiz · Quiz 01 — Thermal Physics",
+      "url": "https://drive.google.com/file/d/1WPnLF8-Wwz2yxXzocLy5hhPoCf9AJg0V/view?usp=drivesdk",
+      "created": "2026-07-27T09:28:00.864Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "student",
+        "quiz",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-13IW4Anrk91gEdARZkap-kvNrYciKINTj",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-002_EQUATION-LIST_v3.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 — Thermal Conduction and Radiation · Equation_List",
+      "url": "https://drive.google.com/file/d/13IW4Anrk91gEdARZkap-kvNrYciKINTj/view?usp=drivesdk",
+      "created": "2026-07-27T08:18:59.797Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "exercise",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-1YYHuqcuWNDGHBLQTVJu1M83tSnUaJHSy",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-002_TEACHER_v3.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 — Thermal Conduction and Radiation",
+      "url": "https://drive.google.com/file/d/1YYHuqcuWNDGHBLQTVJu1M83tSnUaJHSy/view?usp=drivesdk",
+      "created": "2026-07-27T08:17:28.913Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-1vEGlovHhHcw3Dx4eRV3I5VJsDYBwksus",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-002_STUDENT_v3.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 — Thermal Conduction and Radiation",
+      "url": "https://drive.google.com/file/d/1vEGlovHhHcw3Dx4eRV3I5VJsDYBwksus/view?usp=drivesdk",
+      "created": "2026-07-27T08:17:11.790Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-14ywtMNUpxMU-89VKzrIKCWVV-loTN95G",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_EQUATION-LIST_v3.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 01 — Specific Heat, Latent Heat and Internal Energy · Equation_List",
+      "url": "https://drive.google.com/file/d/14ywtMNUpxMU-89VKzrIKCWVV-loTN95G/view?usp=drivesdk",
+      "created": "2026-07-27T08:16:14.646Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1g_-wrKzsSXiYNYv2QuT1Neqx_ItEZc58",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_TEACHER_v3.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 01 — Specific Heat, Latent Heat and Internal Energy",
+      "url": "https://drive.google.com/file/d/1g_-wrKzsSXiYNYv2QuT1Neqx_ItEZc58/view?usp=drivesdk",
+      "created": "2026-07-27T08:14:51.089Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1XqJpW_JQ6ojxmNSh8Y2FaGc6THZomrI_",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_STUDENT_v3.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 01 — Specific Heat, Latent Heat and Internal Energy",
+      "url": "https://drive.google.com/file/d/1XqJpW_JQ6ojxmNSh8Y2FaGc6THZomrI_/view?usp=drivesdk",
+      "created": "2026-07-27T08:14:23.789Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1SGd68xmSDbiNcJkYqpdjWbkVM9zjU9M3",
+      "title": "IBDP-PHY-A2-FBD-TN-v1.1-teacher-delivery-grayscale.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "Generated Products · Teaching Notes - Production Pilots · IBDP-PHY-A2-FBD-TN-v1.1",
+      "url": "https://drive.google.com/file/d/1SGd68xmSDbiNcJkYqpdjWbkVM9zjU9M3/view?usp=drivesdk",
+      "created": "2026-07-27T08:04:50.020Z",
+      "tags": [
+        "IB",
+        "teacher"
+      ]
+    },
+    {
+      "id": "drive-1LryeR3FJfYsynE3tzDeUxwMqT3tNkKkz",
+      "title": "IBDP-PHY-A2-FBD-TN-v1.1-teacher-delivery.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "Generated Products · Teaching Notes - Production Pilots · IBDP-PHY-A2-FBD-TN-v1.1",
+      "url": "https://drive.google.com/file/d/1LryeR3FJfYsynE3tzDeUxwMqT3tNkKkz/view?usp=drivesdk",
+      "created": "2026-07-27T08:04:38.730Z",
+      "tags": [
+        "IB",
+        "teacher"
+      ]
+    },
+    {
+      "id": "drive-1paGHJWkgzfh8zI4FT-4886tQClWcwx0T",
+      "title": "IBDP-PHY-A2-FBD-TN-v1.1-teacher-answer-grayscale.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "Generated Products · Teaching Notes - Production Pilots · IBDP-PHY-A2-FBD-TN-v1.1",
+      "url": "https://drive.google.com/file/d/1paGHJWkgzfh8zI4FT-4886tQClWcwx0T/view?usp=drivesdk",
+      "created": "2026-07-27T08:04:15.959Z",
+      "tags": [
+        "IB",
+        "teacher"
+      ]
+    },
+    {
+      "id": "drive-1tgy6MMSIWpXzvI-u6PJkk3VN7cCYxBmt",
+      "title": "IBDP-PHY-A2-FBD-TN-v1.1-teacher-answer.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "Generated Products · Teaching Notes - Production Pilots · IBDP-PHY-A2-FBD-TN-v1.1",
+      "url": "https://drive.google.com/file/d/1tgy6MMSIWpXzvI-u6PJkk3VN7cCYxBmt/view?usp=drivesdk",
+      "created": "2026-07-27T08:04:03.271Z",
+      "tags": [
+        "IB",
+        "teacher"
+      ]
+    },
+    {
+      "id": "drive-14Dt4ONsiOd9WXWKnLws_Kr4olFsg4NpU",
+      "title": "IBDP-PHY-A2-FBD-TN-v1.1-learner-grayscale.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "Generated Products · Teaching Notes - Production Pilots · IBDP-PHY-A2-FBD-TN-v1.1",
+      "url": "https://drive.google.com/file/d/14Dt4ONsiOd9WXWKnLws_Kr4olFsg4NpU/view?usp=drivesdk",
+      "created": "2026-07-27T08:03:35.742Z",
+      "tags": [
+        "IB"
+      ]
+    },
+    {
+      "id": "drive-1MwIrr6mHQ0YFOchWHjNrmx5j7ApjdW9o",
+      "title": "IBDP-PHY-A2-FBD-TN-v1.1-learner.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "Generated Products · Teaching Notes - Production Pilots · IBDP-PHY-A2-FBD-TN-v1.1",
+      "url": "https://drive.google.com/file/d/1MwIrr6mHQ0YFOchWHjNrmx5j7ApjdW9o/view?usp=drivesdk",
+      "created": "2026-07-27T08:03:23.830Z",
+      "tags": [
+        "IB"
+      ]
+    },
     {
       "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
       "title": "01 NTK Master Index",
@@ -12,118 +391,6 @@
       "created": "2026-07-26T18:36:24.252Z",
       "tags": [
         "NTK"
-      ]
-    },
-    {
-      "id": "drive-1h84-FmMgaO2kaYHZN9_jni-kWG-Dm34M8t9BRBSQDpI",
-      "title": "2627-SCO-PHYS-IBH2-MOD-A-EXERCISE-002 — Native Mirror current — cover v2.3 handoff pending",
-      "source": "Teaching Tool",
-      "kind": "doc",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 - Specific Heat, Latent Heat and Internal Energy",
-      "url": "https://docs.google.com/document/d/1h84-FmMgaO2kaYHZN9_jni-kWG-Dm34M8t9BRBSQDpI/edit?usp=drivesdk",
-      "created": "2026-07-26T17:40:45.248Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "exercise"
-      ]
-    },
-    {
-      "id": "drive-1CBgu-SvAk6HN_qv18AOg1zJ-xZdKip8_",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-002_EQUATION-LIST_v2.0.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 - Specific Heat, Latent Heat and Internal Energy · Equation_List",
-      "url": "https://drive.google.com/file/d/1CBgu-SvAk6HN_qv18AOg1zJ-xZdKip8_/view?usp=drivesdk",
-      "created": "2026-07-26T07:44:28.034Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "exercise"
-      ]
-    },
-    {
-      "id": "drive-13y-gR-Pd-dUVl22PfVjShGdyAr0oLPUg",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-002_TEACHER_v2.0.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 - Specific Heat, Latent Heat and Internal Energy",
-      "url": "https://drive.google.com/file/d/13y-gR-Pd-dUVl22PfVjShGdyAr0oLPUg/view?usp=drivesdk",
-      "created": "2026-07-26T07:41:28.409Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "teacher",
-        "exercise"
-      ]
-    },
-    {
-      "id": "drive-1nzg8KjJuiRNABghOJm_MmfE_PoosoIP4",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-002_STUDENT_v2.0.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 - Specific Heat, Latent Heat and Internal Energy",
-      "url": "https://drive.google.com/file/d/1nzg8KjJuiRNABghOJm_MmfE_PoosoIP4/view?usp=drivesdk",
-      "created": "2026-07-26T07:39:27.635Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "student",
-        "exercise"
-      ]
-    },
-    {
-      "id": "drive-1OW3t4GvREmJTSJLhhXgYk66JFsYrQyPe",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_EQUATION-LIST_v1.3.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 01 — Thermal Conduction and Radiation · Equation_List",
-      "url": "https://drive.google.com/file/d/1OW3t4GvREmJTSJLhhXgYk66JFsYrQyPe/view?usp=drivesdk",
-      "created": "2026-07-25T06:57:55.499Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "exercise",
-        "thermal"
-      ]
-    },
-    {
-      "id": "drive-1wt9PJTWBPwbW7SCAEMcyHHxT2wNIUCYo",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_TEACHER_v1.3.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 01 — Thermal Conduction and Radiation",
-      "url": "https://drive.google.com/file/d/1wt9PJTWBPwbW7SCAEMcyHHxT2wNIUCYo/view?usp=drivesdk",
-      "created": "2026-07-25T06:56:50.725Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "teacher",
-        "exercise",
-        "thermal"
-      ]
-    },
-    {
-      "id": "drive-1pgkPps_iDWMiAgrt2puerpQyT-621UK9",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-001_STUDENT_v1.3.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 01 — Thermal Conduction and Radiation",
-      "url": "https://drive.google.com/file/d/1pgkPps_iDWMiAgrt2puerpQyT-621UK9/view?usp=drivesdk",
-      "created": "2026-07-25T06:56:38.577Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "student",
-        "exercise",
-        "thermal"
       ]
     },
     {
@@ -706,23 +973,6 @@
         "teacher",
         "exercise",
         "projectile motion"
-      ]
-    },
-    {
-      "id": "drive-1LDGf7SDTC7_cGpVLTpIAV2PYNmRQKfA7",
-      "title": "Exercise 02 — Thermal Physics — Combined Draft (v1.0)",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 02 — Thermal Physics",
-      "url": "https://drive.google.com/file/d/1LDGf7SDTC7_cGpVLTpIAV2PYNmRQKfA7/view?usp=drivesdk",
-      "created": "2026-07-17T03:30:46.774Z",
-      "tags": [
-        "Physics",
-        "IB",
-        "NTK",
-        "Summer CO",
-        "exercise",
-        "thermal"
       ]
     },
     {
