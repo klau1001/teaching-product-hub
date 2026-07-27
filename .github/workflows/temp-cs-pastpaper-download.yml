@@ -22,11 +22,18 @@ jobs:
           base='https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Computer-science/2017/Exam-materials'
 
           fetch_one() {
-            local year="$1" name="$2" kind="$3" required="$4"
-            local dir="out/4CP0/$year/june" tmp="$dir/$name.part" dst="$dir/$name" url="$base/$name"
+            local year="$1"
+            local name="$2"
+            local kind="$3"
+            local required="$4"
+            local dir="out/4CP0/$year/june"
+            local tmp="$dir/$name.part"
+            local dst="$dir/$name"
+            local url="$base/$name"
             if curl -fL --retry 2 --retry-all-errors --connect-timeout 20 --max-time 120 \
               -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36' -o "$tmp" "$url"; then
-              local size; size=$(stat -c%s "$tmp")
+              local size
+              size=$(stat -c%s "$tmp")
               local ok=0
               if [ "$kind" = pdf ] && head -c 5 "$tmp" | grep -q '%PDF-' && [ "$size" -gt 10000 ]; then ok=1; fi
               if [ "$kind" = zip ] && unzip -tq "$tmp" >/dev/null 2>&1 && [ "$size" -gt 1000 ]; then ok=1; fi
@@ -43,21 +50,17 @@ jobs:
             fi
           }
 
-          # 2024: four confirmed official PDFs.
           fetch_one 2024 '4cp0-01-que-20240524.pdf' pdf required
           fetch_one 2024 '4cp0-01-rms-20240822.pdf' pdf required
           fetch_one 2024 '4cp0-02-que-20240613.pdf' pdf required
           fetch_one 2024 '4cp0-02-rms-20240822.pdf' pdf required
-          # Probe possible official data/package objects without promoting invalid responses.
           fetch_one 2024 '4cp0-02-que-20240613.zip' zip optional
           fetch_one 2024 '4cp0-02-data-20240613.zip' zip optional
 
-          # 2023: Paper 1 and Paper 2A confirmed official PDFs.
           fetch_one 2023 '4cp0-01-que-20230527.pdf' pdf required
           fetch_one 2023 '4cp0-01-rms-20230824.pdf' pdf required
           fetch_one 2023 '4cp0-2a-que-20230608.pdf' pdf required
           fetch_one 2023 '4cp0-2a-rms-20230824.pdf' pdf required
-          # Probe language variants and supplied-file packages.
           fetch_one 2023 '4cp0-2b-que-20230608.pdf' pdf optional
           fetch_one 2023 '4cp0-2b-rms-20230824.pdf' pdf optional
           fetch_one 2023 '4cp0-2c-que-20230608.pdf' pdf optional
@@ -76,7 +79,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: pearson-4cp0-2023-2024
+          name: pearson-4cp0-2023-2024-v2
           path: out/
           if-no-files-found: error
           retention-days: 1
