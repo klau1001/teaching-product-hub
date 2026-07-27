@@ -1,0 +1,50 @@
+name: Temporary fast discover Pearson 4CP0 2025 Paper 2 media
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Query page and WordPress media API
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          base='https://www.exampaperspractice.co.uk'
+          page="$base/igcse/sciences/computer-science/edexcel-igcse-computer-science-4pc0-past-papers/"
+          ua='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/131 Safari/537.36'
+          curl --fail --location --max-time 30 -A "$ua" "$page" -o out/page.html
+          grep -Eo 'https?://[^"'"'"'<> ]+' out/page.html | grep -Ei 'wp-content/uploads.*(4cp0|2aw|2bw|2cw|paper.?2|p2|2025|2506)' | sort -u > out/page_candidates.txt || true
+          : > out/media.jsonl
+          for term in 4cp0 2AW 2BW 2CW 2506 'P2 QP' 'P2 MS'; do
+            encoded=$(python -c 'import sys,urllib.parse; print(urllib.parse.quote(sys.argv[1]))' "$term")
+            url="$base/wp-json/wp/v2/media?search=$encoded&per_page=100"
+            echo "### $term" >> out/media.jsonl
+            curl --fail --location --max-time 30 -A "$ua" "$url" >> out/media.jsonl || echo '{"error":"request_failed"}' >> out/media.jsonl
+            echo >> out/media.jsonl
+          done
+          python - <<'PY'
+          import json,re
+          from pathlib import Path
+          text=Path('out/media.jsonl').read_text('utf-8','replace')
+          urls=sorted(set(re.findall(r'https?://[^"\\\s]+',text)))
+          keep=[u for u in urls if 'wp-content/uploads' in u.lower() and any(k in u.lower() for k in ['4cp0','2aw','2bw','2cw','p2','2025','2506'])]
+          Path('out/media_candidates.txt').write_text('\n'.join(keep)+'\n',encoding='utf-8')
+          print('\n'.join(keep))
+          PY
+      - name: Upload discovery artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pearson-4cp0-2025-paper2-media-fast-discovery
+          path: out/
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 0
