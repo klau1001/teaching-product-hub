@@ -27,7 +27,6 @@ jobs:
             curl --fail --location --retry 4 --retry-all-errors --connect-timeout 20 --max-time 120 -A 'Mozilla/5.0' "$url" -o "$dest"
             test "$(head -c 5 "$dest")" = '%PDF-'
             test "$(stat -c%s "$dest")" -gt 10000
-            pdfinfo "$dest" >/dev/null
           }
 
           get "$p1/June%202019%20QP%20-%20Paper%201%20Edexcel%20Computer%20Science%20IGCSE.pdf" out/2019/June_2019_QP_Paper_1.pdf
