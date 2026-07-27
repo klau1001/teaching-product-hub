@@ -1,0 +1,55 @@
+name: Temporary acquire Pearson 4CP0 2025 Paper 1
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Install PDF validator
+        shell: bash
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+
+      - name: Download candidate Paper 1 PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          page='https://www.exampaperspractice.co.uk/igcse/sciences/computer-science/edexcel-igcse-computer-science-4pc0-past-papers/'
+
+          get_pdf() {
+            local url="$1" dest="$2"
+            curl --fail --location --retry 5 --retry-all-errors --connect-timeout 20 --max-time 180 \
+              -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/131 Safari/537.36' \
+              -e "$page" \
+              -H 'Accept: application/pdf,application/octet-stream;q=0.9,*/*;q=0.8' \
+              "$url" -o "$dest"
+            test "$(head -c 5 "$dest")" = '%PDF-'
+            test "$(stat -c%s "$dest")" -gt 10000
+            pdfinfo "$dest" > "$dest.pdfinfo.txt"
+          }
+
+          get_pdf 'https://www.exampaperspractice.co.uk/wp-content/uploads/P1_QP_1777445825831.pdf' out/4cp0-01-que-20250510.pdf
+          get_pdf 'https://www.exampaperspractice.co.uk/wp-content/uploads/P1_MS_1777445825044.pdf' out/4cp0-01-rms-20250821.pdf
+
+          sha256sum out/*.pdf > out/SHA256SUMS.txt
+          find out -type f -name '*.pdf' -printf '%f\t%s bytes\n' | sort > out/FILE_INVENTORY.tsv
+          test "$(find out -type f -name '*.pdf' | wc -l)" -eq 2
+
+      - name: Upload acquisition artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pearson-4cp0-2025-paper1-candidates
+          path: out/
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 0
