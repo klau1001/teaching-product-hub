@@ -1,0 +1,80 @@
+name: Temporary acquire Cambridge 0478 2025
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Download original PDFs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out/March_2025 out/May-June_2025 out/October-November_2025
+          base='https://papers.xtremepape.rs/CAIE/IGCSE/Computer%20Science%20%280478%29'
+
+          march=(
+            0478_m25_qp_12.pdf 0478_m25_ms_12.pdf
+            0478_m25_qp_22.pdf 0478_m25_ms_22.pdf
+          )
+          summer=(
+            0478_s25_qp_11.pdf 0478_s25_ms_11.pdf
+            0478_s25_qp_12.pdf 0478_s25_ms_12.pdf
+            0478_s25_qp_13.pdf 0478_s25_ms_13.pdf
+            0478_s25_qp_21.pdf 0478_s25_ms_21.pdf
+            0478_s25_qp_22.pdf 0478_s25_ms_22.pdf
+            0478_s25_qp_23.pdf 0478_s25_ms_23.pdf
+          )
+          winter=(
+            0478_w25_qp_11.pdf 0478_w25_ms_11.pdf
+            0478_w25_qp_12.pdf 0478_w25_ms_12.pdf
+            0478_w25_qp_13.pdf 0478_w25_ms_13.pdf
+            0478_w25_qp_21.pdf 0478_w25_ms_21.pdf
+            0478_w25_qp_22.pdf 0478_w25_ms_22.pdf
+            0478_w25_qp_23.pdf 0478_w25_ms_23.pdf
+          )
+
+          fetch_group() {
+            local dest="$1"; shift
+            for name in "$@"; do
+              echo "Downloading $name"
+              curl --fail --location --retry 4 --retry-all-errors \
+                --connect-timeout 20 --max-time 120 \
+                -A 'Mozilla/5.0' "$base/$name" -o "$dest/$name"
+              test "$(head -c 5 "$dest/$name")" = '%PDF-'
+              test "$(stat -c%s "$dest/$name")" -gt 10000
+            done
+          }
+
+          fetch_group out/March_2025 "${march[@]}"
+          fetch_group out/May-June_2025 "${summer[@]}"
+          fetch_group out/October-November_2025 "${winter[@]}"
+
+          find out -type f -name '*.pdf' -print0 | sort -z | xargs -0 sha256sum > out/SHA256SUMS.txt
+          find out -type f -name '*.pdf' -printf '%P\t%s bytes\n' | sort > out/FILE_INVENTORY.tsv
+          printf '%s\n' \
+            'Source archive: https://papers.xtremepape.rs/CAIE/IGCSE/Computer%20Science%20%280478%29/' \
+            'Qualification: Cambridge IGCSE Computer Science 0478' \
+            'Examination year: 2025' \
+            'Expected QP-MS pairs: 14' \
+            'Expected PDFs: 28' \
+            > out/SOURCE_MANIFEST.txt
+
+          count=$(find out -type f -name '*.pdf' | wc -l)
+          test "$count" -eq 28
+
+      - name: Upload acquisition artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cambridge-0478-2025-originals
+          path: out/
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 0
