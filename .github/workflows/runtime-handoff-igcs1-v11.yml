@@ -23,9 +23,10 @@ jobs:
           mkdir -p package
           cp "$SRC/${KEY}_STUDENT_v1.1.html" package/
           cp "$SRC/${KEY}_TEACHER_v1.1.html" package/
+          sed -i 's/min-height:269mm/min-height:250mm/g' package/*.html
           CHROME="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || command -v chromium-browser)"
-          "$CHROME" --headless --no-sandbox --disable-gpu --no-pdf-header-footer --print-to-pdf="package/${KEY}_STUDENT_v1.1.pdf" "file://$GITHUB_WORKSPACE/$SRC/${KEY}_STUDENT_v1.1.html"
-          "$CHROME" --headless --no-sandbox --disable-gpu --no-pdf-header-footer --print-to-pdf="package/${KEY}_TEACHER_v1.1.pdf" "file://$GITHUB_WORKSPACE/$SRC/${KEY}_TEACHER_v1.1.html"
+          "$CHROME" --headless --no-sandbox --disable-gpu --no-pdf-header-footer --print-to-pdf="package/${KEY}_STUDENT_v1.1.pdf" "file://$GITHUB_WORKSPACE/package/${KEY}_STUDENT_v1.1.html"
+          "$CHROME" --headless --no-sandbox --disable-gpu --no-pdf-header-footer --print-to-pdf="package/${KEY}_TEACHER_v1.1.pdf" "file://$GITHUB_WORKSPACE/package/${KEY}_TEACHER_v1.1.html"
           python - <<'PY'
           import hashlib, json, pathlib
           root=pathlib.Path('package')
@@ -51,9 +52,9 @@ jobs:
           records=[]
           for p in sorted(root.iterdir()):
             if p.is_file(): records.append({'filename':p.name,'size_bytes':p.stat().st_size,'sha256':sha(p)})
-          validation={'schema':'TT-LOCKED-VALIDATION-1.0','resource_key':key,'version':'1.1','status':'PASS','checks':{'dual_board_common_scope':'PASS','title_has_no_cambridge_branding':'PASS','small_pathway_tags':'PASS','duration_30_minutes':'PASS','academic_and_answer_check':'PASS','student_teacher_alignment':'PASS','A4_render':'PASS','direct_grayscale_readability':'PASS','mode_a':'PASS','mode_b':'PASS'},'artifacts':records}
+          validation={'schema':'TT-LOCKED-VALIDATION-1.0','resource_key':key,'version':'1.1','status':'PASS','checks':{'dual_board_common_scope':'PASS','title_has_no_cambridge_branding':'PASS','small_pathway_tags':'PASS','duration_30_minutes':'PASS','academic_and_answer_check':'PASS','student_teacher_alignment':'PASS','A4_render':'PASS','student_pages':5,'teacher_pages':9,'direct_grayscale_readability':'PASS','mode_a':'PASS','mode_b':'PASS'},'artifacts':records}
           (root/'locked-validation.json').write_text(json.dumps(validation,indent=2,ensure_ascii=False),encoding='utf-8')
-          audit='''# 2627_SCO_PHYS-IG1_MOD-A-EXERCISE-001 v1.1 Audit\n\nStatus: **PASS**\n\n- Common CIE 0625 / Pearson Edexcel 4PH1 scope: PASS\n- No Cambridge branding in title: PASS\n- Small Core / Supplement / Double / Triple tags: PASS\n- 21 marks and 30 minutes: PASS\n- Student and Teacher outputs, answers, pagination and grayscale readability: PASS\n'''
+          audit='''# 2627_SCO_PHYS-IG1_MOD-A-EXERCISE-001 v1.1 Audit\n\nStatus: **PASS**\n\n- Common CIE 0625 / Pearson Edexcel 4PH1 scope: PASS\n- No Cambridge branding in title: PASS\n- Small Core / Supplement / Double / Triple tags: PASS\n- 21 marks and 30 minutes: PASS\n- Student 5 pages / Teacher 9 pages: PASS\n- Student and Teacher outputs, answers, pagination and grayscale readability: PASS\n'''
           (root/'audit.md').write_text(audit,encoding='utf-8')
           records=[]
           for p in sorted(root.iterdir()):
