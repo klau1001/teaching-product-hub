@@ -29,34 +29,33 @@ jobs:
           Path('out/page.html').write_bytes(r.content)
           known={'P1_QP_1777445825831.pdf','P1_MS_1777445825044.pdf'}
           all_media=[]
-          for page in range(1,101):
-              params={'per_page':100,'page':page,'media_type':'file','mime_type':'application/pdf','orderby':'date','order':'desc','_fields':'id,date,modified,slug,title,source_url,link,caption,description'}
+          for page in range(1,31):
+              params={'per_page':100,'page':page,'orderby':'date','order':'desc','_fields':'id,date,modified,slug,title,source_url,link,caption,description,mime_type'}
               resp=s.get(base+'/wp-json/wp/v2/media',params=params,timeout=60)
               if resp.status_code==400 and 'rest_post_invalid_page_number' in resp.text:
                   break
-              resp.raise_for_status()
+              if resp.status_code>=400:
+                  Path(f'out/rest_error_page_{page}.txt').write_text(resp.text,encoding='utf-8')
+                  resp.raise_for_status()
               batch=resp.json()
               if not batch: break
               all_media.extend(batch)
               print('page',page,'items',len(batch),'total',len(all_media))
-              if any(any(k in (m.get('source_url') or '') for k in known) for m in all_media) and page>=5:
-                  # continue a little further to capture neighbouring uploads
-                  pass
-              if page>=30: break
-              time.sleep(0.15)
-          Path('out/all_pdf_media.json').write_text(json.dumps(all_media,indent=2,ensure_ascii=False),encoding='utf-8')
+              time.sleep(0.1)
+          pdf_media=[m for m in all_media if (m.get('source_url') or '').lower().endswith('.pdf')]
+          Path('out/all_media.json').write_text(json.dumps(all_media,indent=2,ensure_ascii=False),encoding='utf-8')
+          Path('out/all_pdf_media.json').write_text(json.dumps(pdf_media,indent=2,ensure_ascii=False),encoding='utf-8')
           keys=['4cp0','computer-science','p1_qp_1777445825831','p1_ms_1777445825044','2aw','2bw','2cw','paper-2','p2_','2025']
           filtered=[]
-          for m in all_media:
+          for m in pdf_media:
               text=json.dumps(m,ensure_ascii=False).lower()
               if any(k in text for k in keys): filtered.append(m)
           Path('out/filtered_media.json').write_text(json.dumps(filtered,indent=2,ensure_ascii=False),encoding='utf-8')
-          # Locate known files and include +/- 30 media IDs around them.
           known_items=[m for m in all_media if any(k in (m.get('source_url') or '') for k in known)]
           ids=[m['id'] for m in known_items]
-          neighbours=[m for m in all_media if any(abs(m['id']-i)<=30 for i in ids)] if ids else []
+          neighbours=[m for m in all_media if any(abs(m['id']-i)<=100 for i in ids)] if ids else []
           Path('out/known_and_neighbours.json').write_text(json.dumps({'known':known_items,'neighbours':neighbours},indent=2,ensure_ascii=False),encoding='utf-8')
-          print('known ids',ids,'filtered',len(filtered),'neighbours',len(neighbours))
+          print('known ids',ids,'filtered',len(filtered),'neighbours',len(neighbours),'pdfs',len(pdf_media))
           PY
 
           curl --fail --location --retry 3 -A 'Mozilla/5.0' 'https://www.exampaperspractice.co.uk/wp-sitemap-posts-attachment-1.xml' -o out/attachment-sitemap-1.xml || true
