@@ -18,7 +18,8 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p out/March_2025 out/May-June_2025 out/October-November_2025
-          base='https://papers.xtremepape.rs/CAIE/IGCSE/Computer%20Science%20%280478%29'
+          base_archive='https://papers.xtremepape.rs/CAIE/IGCSE/Computer%20Science%20%280478%29'
+          base_march='https://xtrapapers.co/papers/caie/igcse/computer-science-0478/2025-march'
 
           march=(
             0478_m25_qp_12.pdf 0478_m25_ms_12.pdf
@@ -42,25 +43,26 @@ jobs:
           )
 
           fetch_group() {
-            local dest="$1"; shift
+            local dest="$1"; local base="$2"; local suffix="$3"; shift 3
             for name in "$@"; do
               echo "Downloading $name"
               curl --fail --location --retry 4 --retry-all-errors \
                 --connect-timeout 20 --max-time 120 \
-                -A 'Mozilla/5.0' "$base/$name" -o "$dest/$name"
+                -A 'Mozilla/5.0' "$base/$name$suffix" -o "$dest/$name"
               test "$(head -c 5 "$dest/$name")" = '%PDF-'
               test "$(stat -c%s "$dest/$name")" -gt 10000
             done
           }
 
-          fetch_group out/March_2025 "${march[@]}"
-          fetch_group out/May-June_2025 "${summer[@]}"
-          fetch_group out/October-November_2025 "${winter[@]}"
+          fetch_group out/March_2025 "$base_march" '/download' "${march[@]}"
+          fetch_group out/May-June_2025 "$base_archive" '' "${summer[@]}"
+          fetch_group out/October-November_2025 "$base_archive" '' "${winter[@]}"
 
           find out -type f -name '*.pdf' -print0 | sort -z | xargs -0 sha256sum > out/SHA256SUMS.txt
           find out -type f -name '*.pdf' -printf '%P\t%s bytes\n' | sort > out/FILE_INVENTORY.tsv
           printf '%s\n' \
-            'Source archive: https://papers.xtremepape.rs/CAIE/IGCSE/Computer%20Science%20%280478%29/' \
+            'March source archive: https://xtrapapers.co/papers/caie/igcse/computer-science-0478/2025-march/' \
+            'May-June and October-November source archive: https://papers.xtremepape.rs/CAIE/IGCSE/Computer%20Science%20%280478%29/' \
             'Qualification: Cambridge IGCSE Computer Science 0478' \
             'Examination year: 2025' \
             'Expected QP-MS pairs: 14' \
