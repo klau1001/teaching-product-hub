@@ -1,0 +1,73 @@
+name: Temporary discover Pearson 4CP0 2025 media
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Query public WordPress media metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          python - <<'PY'
+          import json, requests, time
+          from pathlib import Path
+          base='https://www.exampaperspractice.co.uk'
+          headers={'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/131 Safari/537.36'}
+          s=requests.Session(); s.headers.update(headers)
+          page_url=base+'/igcse/sciences/computer-science/edexcel-igcse-computer-science-4pc0-past-papers/'
+          r=s.get(page_url,timeout=60); r.raise_for_status()
+          Path('out/page.html').write_bytes(r.content)
+          known={'P1_QP_1777445825831.pdf','P1_MS_1777445825044.pdf'}
+          all_media=[]
+          for page in range(1,101):
+              params={'per_page':100,'page':page,'media_type':'file','mime_type':'application/pdf','orderby':'date','order':'desc','_fields':'id,date,modified,slug,title,source_url,link,caption,description'}
+              resp=s.get(base+'/wp-json/wp/v2/media',params=params,timeout=60)
+              if resp.status_code==400 and 'rest_post_invalid_page_number' in resp.text:
+                  break
+              resp.raise_for_status()
+              batch=resp.json()
+              if not batch: break
+              all_media.extend(batch)
+              print('page',page,'items',len(batch),'total',len(all_media))
+              if any(any(k in (m.get('source_url') or '') for k in known) for m in all_media) and page>=5:
+                  # continue a little further to capture neighbouring uploads
+                  pass
+              if page>=30: break
+              time.sleep(0.15)
+          Path('out/all_pdf_media.json').write_text(json.dumps(all_media,indent=2,ensure_ascii=False),encoding='utf-8')
+          keys=['4cp0','computer-science','p1_qp_1777445825831','p1_ms_1777445825044','2aw','2bw','2cw','paper-2','p2_','2025']
+          filtered=[]
+          for m in all_media:
+              text=json.dumps(m,ensure_ascii=False).lower()
+              if any(k in text for k in keys): filtered.append(m)
+          Path('out/filtered_media.json').write_text(json.dumps(filtered,indent=2,ensure_ascii=False),encoding='utf-8')
+          # Locate known files and include +/- 30 media IDs around them.
+          known_items=[m for m in all_media if any(k in (m.get('source_url') or '') for k in known)]
+          ids=[m['id'] for m in known_items]
+          neighbours=[m for m in all_media if any(abs(m['id']-i)<=30 for i in ids)] if ids else []
+          Path('out/known_and_neighbours.json').write_text(json.dumps({'known':known_items,'neighbours':neighbours},indent=2,ensure_ascii=False),encoding='utf-8')
+          print('known ids',ids,'filtered',len(filtered),'neighbours',len(neighbours))
+          PY
+
+          curl --fail --location --retry 3 -A 'Mozilla/5.0' 'https://www.exampaperspractice.co.uk/wp-sitemap-posts-attachment-1.xml' -o out/attachment-sitemap-1.xml || true
+          grep -Eio 'https?[^<" ]+(4cp0|P1_QP|P1_MS|2AW|2BW|2CW|P2)[^<" ]*' out/page.html out/attachment-sitemap-1.xml 2>/dev/null | sort -u > out/grep_urls.txt || true
+          find out -type f -printf '%P\t%s bytes\n' | sort > out/FILE_INVENTORY.tsv
+
+      - name: Upload discovery artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pearson-4cp0-2025-media-discovery
+          path: out/
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 0
