@@ -1,4 +1,4 @@
-name: Temporary Pearson 4CP0 2023-2024 acquisition
+name: Temporary Pearson 4CP0 2019-2022 acquisition
 
 on:
   pull_request:
@@ -11,75 +11,86 @@ permissions:
 jobs:
   acquire:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - name: Download and validate Pearson 4CP0 source files
         shell: bash
         run: |
           set -uo pipefail
-          mkdir -p out/4CP0/2024/june out/4CP0/2023/june out/diagnostic
-          printf 'status\tyear\tfilename\tsize\tsha256\turl\n' > out/acquisition_status.tsv
-          base='https://qualifications.pearson.com/content/dam/pdf/International-GCSE/Computer-science/2017/Exam-materials'
+          mkdir -p out/4CP0/2022/june out/4CP0/2021/june out/4CP0/2021/oct-nov out/4CP0/2020/oct-nov out/4CP0/2019/june out/diagnostic
+          printf 'status\tyear\tsession\tcomponent\trole\tfilename\tsize\tsha256\tprovenance\turl\n' > out/acquisition_status.tsv
 
-          fetch_one() {
+          fetch_pdf() {
             local year="$1"
-            local name="$2"
-            local kind="$3"
-            local required="$4"
-            local dir="out/4CP0/$year/june"
+            local session="$2"
+            local component="$3"
+            local role="$4"
+            local dir="$5"
+            local name="$6"
+            local provenance="$7"
+            local url="$8"
             local tmp="$dir/$name.part"
             local dst="$dir/$name"
-            local url="$base/$name"
-            if curl -fL --retry 2 --retry-all-errors --connect-timeout 20 --max-time 120 \
-              -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36' -o "$tmp" "$url"; then
+            if curl -fL --retry 3 --retry-all-errors --connect-timeout 20 --max-time 180 \
+              -A 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/150 Safari/537.36' \
+              -o "$tmp" "$url"; then
               local size
               size=$(stat -c%s "$tmp")
-              local ok=0
-              if [ "$kind" = pdf ] && head -c 5 "$tmp" | grep -q '%PDF-' && [ "$size" -gt 10000 ]; then ok=1; fi
-              if [ "$kind" = zip ] && unzip -tq "$tmp" >/dev/null 2>&1 && [ "$size" -gt 1000 ]; then ok=1; fi
-              if [ "$ok" = 1 ]; then
+              if head -c 5 "$tmp" | grep -q '%PDF-' && [ "$size" -gt 10000 ]; then
                 mv "$tmp" "$dst"
-                printf 'PASS\t%s\t%s\t%s\t%s\t%s\n' "$year" "$name" "$size" "$(sha256sum "$dst" | cut -d' ' -f1)" "$url" >> out/acquisition_status.tsv
+                printf 'PASS\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s\n' "$year" "$session" "$component" "$role" "$name" "$size" "$(sha256sum "$dst" | cut -d' ' -f1)" "$provenance" "$url" >> out/acquisition_status.tsv
               else
-                printf 'FAIL_INVALID_%s\t%s\t%s\t%s\t-\t%s\n' "${kind^^}" "$year" "$name" "$size" "$url" >> out/acquisition_status.tsv
-                mv "$tmp" "out/diagnostic/${year}_${name}.invalid" 2>/dev/null || true
+                printf 'FAIL_INVALID_PDF\t%s\t%s\t%s\t%s\t%s\t%s\t-\t%s\t%s\n' "$year" "$session" "$component" "$role" "$name" "$size" "$provenance" "$url" >> out/acquisition_status.tsv
+                mv "$tmp" "out/diagnostic/${year}_${session}_${component}_${role}.invalid" 2>/dev/null || true
               fi
             else
-              printf 'FAIL_DOWNLOAD\t%s\t%s\t0\t-\t%s\n' "$year" "$name" "$url" >> out/acquisition_status.tsv
+              printf 'FAIL_DOWNLOAD\t%s\t%s\t%s\t%s\t%s\t0\t-\t%s\t%s\n' "$year" "$session" "$component" "$role" "$name" "$provenance" "$url" >> out/acquisition_status.tsv
               rm -f "$tmp"
             fi
           }
 
-          fetch_one 2024 '4cp0-01-que-20240524.pdf' pdf required
-          fetch_one 2024 '4cp0-01-rms-20240822.pdf' pdf required
-          fetch_one 2024 '4cp0-02-que-20240613.pdf' pdf required
-          fetch_one 2024 '4cp0-02-rms-20240822.pdf' pdf required
-          fetch_one 2024 '4cp0-02-que-20240613.zip' zip optional
-          fetch_one 2024 '4cp0-02-data-20240613.zip' zip optional
+          pbase='https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/computer-science/2017/Exam-materials'
+          pbase21='https://qualifications.pearson.com/content/dam/pdf/International%20GCSE/computer-science'
 
-          fetch_one 2023 '4cp0-01-que-20230527.pdf' pdf required
-          fetch_one 2023 '4cp0-01-rms-20230824.pdf' pdf required
-          fetch_one 2023 '4cp0-2a-que-20230608.pdf' pdf required
-          fetch_one 2023 '4cp0-2a-rms-20230824.pdf' pdf required
-          fetch_one 2023 '4cp0-2b-que-20230608.pdf' pdf optional
-          fetch_one 2023 '4cp0-2b-rms-20230824.pdf' pdf optional
-          fetch_one 2023 '4cp0-2c-que-20230608.pdf' pdf optional
-          fetch_one 2023 '4cp0-2c-rms-20230824.pdf' pdf optional
-          fetch_one 2023 '4cp0-2a-que-20230608.zip' zip optional
-          fetch_one 2023 '4cp0-2b-que-20230608.zip' zip optional
-          fetch_one 2023 '4cp0-2c-que-20230608.zip' zip optional
+          fetch_pdf 2022 JUN22 01 QP out/4CP0/2022/june '4cp0-01-que-20220521.pdf' official:Pearson "$pbase/4cp0-01-que-20220521.pdf"
+          fetch_pdf 2022 JUN22 01 MS out/4CP0/2022/june '4cp0-01-rms-20220825.pdf' official:Pearson "$pbase/4cp0-01-rms-20220825.pdf"
+          fetch_pdf 2022 JUN22 02 QP out/4CP0/2022/june '4cp0-02-que-20220609.pdf' official:Pearson "$pbase/4cp0-02-que-20220609.pdf"
+          fetch_pdf 2022 JUN22 2A MS out/4CP0/2022/june '4cp0-2a-rms-20220825.pdf' official:Pearson "$pbase/4cp0-2a-rms-20220825.pdf"
 
-          find out/4CP0 -type f ! -name '*.part' -print0 | sort -z | xargs -0 -r sha256sum > out/SHA256SUMS.txt
+          fetch_pdf 2021 JUN21 01 QP out/4CP0/2021/june '4CP0_01_que_20210429.pdf' official:Pearson "$pbase21/Exam-materials/4CP0_01_que_20210429.pdf"
+          fetch_pdf 2021 JUN21 01 MS out/4CP0/2021/june '4CP0_01_rms_20210604.pdf' official:Pearson "$pbase/4CP0_01_rms_20210604.pdf"
+          fetch_pdf 2021 JUN21 02 QP out/4CP0/2021/june '4CP0_02_que_20210427.pdf' official:Pearson "$pbase/4CP0_02_que_20210427.pdf"
+          fetch_pdf 2021 JUN21 2A MS out/4CP0/2021/june '4CP0_2A_rms_20210604.pdf' official:Pearson "$pbase/4CP0_2A_rms_20210604.pdf"
+
+          fetch_pdf 2021 NOV21 01 QP out/4CP0/2021/oct-nov 'Edexcel_IGCSE_Computer_Science_2021_November_question_paper_af7f2aefd2.pdf' third-party:Medly 'https://firebasestorage.googleapis.com/v0/b/newcontent-a3a1e.firebasestorage.app/o/past-papers-backup%2FEdexcel_IGCSE_Computer_Science%2FEdexcel_IGCSE_Computer_Science_2021_November_question_paper_af7f2aefd2.pdf?alt=media&token=82c52614-2a8e-40ff-b8ef-07b0d208f654'
+          fetch_pdf 2021 NOV21 01 MS out/4CP0/2021/oct-nov 'Edexcel_IGCSE_Computer_Science_2021_November_mark_scheme_9ff46e5eef.pdf' third-party:Medly 'https://firebasestorage.googleapis.com/v0/b/newcontent-a3a1e.firebasestorage.app/o/past-papers-backup%2FEdexcel_IGCSE_Computer_Science%2FEdexcel_IGCSE_Computer_Science_2021_November_mark_scheme_9ff46e5eef.pdf?alt=media&token=ac829f64-e8c2-4259-9098-4f80fba2f249'
+          fetch_pdf 2021 NOV21 02 QP out/4CP0/2021/oct-nov 'Edexcel_IGCSE_Computer_Science_2021_November_question_paper_48a3b78006.pdf' third-party:Medly 'https://firebasestorage.googleapis.com/v0/b/newcontent-a3a1e.firebasestorage.app/o/past-papers-backup%2FEdexcel_IGCSE_Computer_Science%2FEdexcel_IGCSE_Computer_Science_2021_November_question_paper_48a3b78006.pdf?alt=media&token=c784e731-13a0-4112-be14-3dea75dee925'
+          fetch_pdf 2021 NOV21 02 MS out/4CP0/2021/oct-nov 'Edexcel_IGCSE_Computer_Science_2021_November_mark_scheme_ce0dff5a2c.pdf' third-party:Medly 'https://firebasestorage.googleapis.com/v0/b/newcontent-a3a1e.firebasestorage.app/o/past-papers-backup%2FEdexcel_IGCSE_Computer_Science%2FEdexcel_IGCSE_Computer_Science_2021_November_mark_scheme_ce0dff5a2c.pdf?alt=media&token=deeedc7d-3a4b-4903-a5a7-6486c0042b58'
+
+          fetch_pdf 2020 NOV20 01 QP out/4CP0/2020/oct-nov 'Edexcel_IGCSE_Computer_Science_2020_June_question_paper_7ae5b01ffb.pdf' third-party:Medly 'https://firebasestorage.googleapis.com/v0/b/newcontent-a3a1e.firebasestorage.app/o/past-papers-backup%2FEdexcel_IGCSE_Computer_Science%2FEdexcel_IGCSE_Computer_Science_2020_June_question_paper_7ae5b01ffb.pdf?alt=media&token=5e6f96eb-7fce-4994-813d-07a7a66fcef0'
+          fetch_pdf 2020 NOV20 01 MS out/4CP0/2020/oct-nov 'Edexcel_IGCSE_Computer_Science_2020_June_mark_scheme_e6442a72f8.pdf' third-party:Medly 'https://firebasestorage.googleapis.com/v0/b/newcontent-a3a1e.firebasestorage.app/o/past-papers-backup%2FEdexcel_IGCSE_Computer_Science%2FEdexcel_IGCSE_Computer_Science_2020_June_mark_scheme_e6442a72f8.pdf?alt=media&token=b974ba85-bcf1-44c1-bd0c-329aa0e12030'
+          fetch_pdf 2020 NOV20 02 QP out/4CP0/2020/oct-nov 'Edexcel_IGCSE_Computer_Science_2020_June_question_paper_8852e1fbcd.pdf' third-party:Medly 'https://firebasestorage.googleapis.com/v0/b/newcontent-a3a1e.firebasestorage.app/o/past-papers-backup%2FEdexcel_IGCSE_Computer_Science%2FEdexcel_IGCSE_Computer_Science_2020_June_question_paper_8852e1fbcd.pdf?alt=media&token=d2e5c57a-7010-41d0-a25c-901e52acc1f8'
+          fetch_pdf 2020 NOV20 02 MS out/4CP0/2020/oct-nov 'Edexcel_IGCSE_Computer_Science_2020_June_mark_scheme_e0f75a7df2.pdf' third-party:Medly 'https://firebasestorage.googleapis.com/v0/b/newcontent-a3a1e.firebasestorage.app/o/past-papers-backup%2FEdexcel_IGCSE_Computer_Science%2FEdexcel_IGCSE_Computer_Science_2020_June_mark_scheme_e0f75a7df2.pdf?alt=media&token=60dd3001-845a-47fb-9666-37f82588a13c'
+
+          fetch_pdf 2019 JUN19 01 QP out/4CP0/2019/june 'Edexcel_IGCSE_Computer_Science_2019_June_question_paper_0cd2ac7081.pdf' third-party:Medly 'https://firebasestorage.googleapis.com/v0/b/newcontent-a3a1e.firebasestorage.app/o/past-papers-backup%2FEdexcel_IGCSE_Computer_Science%2FEdexcel_IGCSE_Computer_Science_2019_June_question_paper_0cd2ac7081.pdf?alt=media&token=7815646f-0f2d-4dd3-85e1-e6bc86e5125a'
+          fetch_pdf 2019 JUN19 01 MS out/4CP0/2019/june 'Edexcel_IGCSE_Computer_Science_2019_June_mark_scheme_c92bdfa1a7.pdf' third-party:Medly 'https://firebasestorage.googleapis.com/v0/b/newcontent-a3a1e.firebasestorage.app/o/past-papers-backup%2FEdexcel_IGCSE_Computer_Science%2FEdexcel_IGCSE_Computer_Science_2019_June_mark_scheme_c92bdfa1a7.pdf?alt=media&token=4dbe850b-efec-4b68-88d8-7514a0764a9f'
+          fetch_pdf 2019 JUN19 02 QP out/4CP0/2019/june 'Edexcel_IGCSE_Computer_Science_2019_June_question_paper_e734f2b809.pdf' third-party:Medly 'https://firebasestorage.googleapis.com/v0/b/newcontent-a3a1e.firebasestorage.app/o/past-papers-backup%2FEdexcel_IGCSE_Computer_Science%2FEdexcel_IGCSE_Computer_Science_2019_June_question_paper_e734f2b809.pdf?alt=media&token=c2a8789e-54eb-4db0-a443-5cc2fb0f8fcd'
+          fetch_pdf 2019 JUN19 02 MS out/4CP0/2019/june 'Edexcel_IGCSE_Computer_Science_2019_June_mark_scheme_db3a8205ee.pdf' third-party:Medly 'https://firebasestorage.googleapis.com/v0/b/newcontent-a3a1e.firebasestorage.app/o/past-papers-backup%2FEdexcel_IGCSE_Computer_Science%2FEdexcel_IGCSE_Computer_Science_2019_June_mark_scheme_db3a8205ee.pdf?alt=media&token=231a9ba4-53e8-4f44-88f8-baa4117776a3'
+
+          find out/4CP0 -type f -name '*.pdf' -print0 | sort -z | xargs -0 -r sha256sum > out/SHA256SUMS.txt
           cat out/acquisition_status.tsv
-          required_pass=$(awk -F '\t' 'NR>1 && $1=="PASS" && (($2=="2024" && $3 ~ /^4cp0-0[12]-(que|rms)/) || ($2=="2023" && ($3 ~ /^4cp0-01-(que|rms)/ || $3 ~ /^4cp0-2a-(que|rms)/))){n++} END{print n+0}' out/acquisition_status.tsv)
-          echo "Required confirmed PDF PASS count: $required_pass"
-          test "$required_pass" -eq 8
+          pass=$(awk -F '\t' 'NR>1 && $1=="PASS"{n++} END{print n+0}' out/acquisition_status.tsv)
+          fail=$(awk -F '\t' 'NR>1 && $1!="PASS"{n++} END{print n+0}' out/acquisition_status.tsv)
+          echo "PASS count: $pass"
+          echo "FAIL count: $fail"
+          test "$pass" -eq 20
+          test "$fail" -eq 0
 
       - name: Upload acquisition artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: pearson-4cp0-2023-2024-v2
+          name: pearson-4cp0-2019-2022
           path: out/
           if-no-files-found: error
           retention-days: 1
