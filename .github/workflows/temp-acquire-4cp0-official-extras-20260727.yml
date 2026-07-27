@@ -13,6 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      - name: Install PDF validator
+        shell: bash
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils
+
       - name: Download official Pearson files
         shell: bash
         run: |
