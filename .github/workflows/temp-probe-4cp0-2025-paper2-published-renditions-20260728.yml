@@ -1,0 +1,131 @@
+name: Temporary probe Pearson 4CP0 2025 Paper 2 published renditions
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Probe published asset and rendition URLs
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out/evidence out/valid_packages
+          python - <<'PY'
+          import hashlib, json, re, urllib.parse, zipfile
+          from pathlib import Path
+          import requests
+
+          out=Path('out')
+          host='https://qualifications.pearson.com'
+          root='/content/dam/secure/silver/all-uk-and-international/international-gcse/computer-science/2017/exam-materials/'
+          targets={
+            '4cp0-02-que-20250605.zip': {'expected_display_size':'638.5 KB','objectID':'d252a5d63391933f88e7265a6fe9aa58'},
+            '4cp0-02-rms-20250821.zip': {'expected_display_size':'2.1 MB','objectID':'2b283257a2ce4cca7001a1fd0aefb9dc'},
+            'data-files-4cp0-02-june-2025.zip': {'expected_display_size':'10.7 KB','objectID':'9e9315a05315a76bafa77eeee20308ce'},
+          }
+          ua='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131 Safari/537.36'
+          s=requests.Session(); s.headers.update({'User-Agent':ua,'Accept':'application/zip,application/octet-stream,*/*','Referer':'https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses/international-gcse-computer-science-2017.coursematerials.html'})
+
+          selectors=[
+            '',
+            '/jcr:content/renditions/original',
+            '/_jcr_content/renditions/original',
+            '/jcr%3Acontent/renditions/original',
+            '/jcr:content/renditions/original?download=true',
+            '/_jcr_content/renditions/original?download=true',
+            '?download=true',
+            '?forcedownload=true',
+            '.download',
+            '.asset.json',
+            '.infinity.json',
+            '/jcr:content.json',
+            '/jcr:content/renditions.json',
+          ]
+          hosts=[host,'https://www.pearson.com','https://pearson.com']
+          urls=[]
+          for name,meta in targets.items():
+            path=root+name
+            for h in hosts:
+              for selector in selectors:
+                urls.append({'name':name,'kind':'asset_variant','url':h+path+selector})
+            modified=(root+name).replace('.','_@_')
+            urls.append({'name':name,'kind':'site_secure_click_form','url':host+modified})
+            api_path='/api/assets'+root.removeprefix('/content/dam')+name
+            urls.extend([
+              {'name':name,'kind':'aem_assets_api','url':host+api_path},
+              {'name':name,'kind':'aem_assets_api_json','url':host+api_path+'.json'},
+            ])
+
+          # Public Algolia metadata record; this is provenance evidence, not the source binary.
+          algolia='https://l639t95u5a-dsn.algolia.net/1/indexes/qualifications-uk_LIVE_master-content/'
+          headers={'x-algolia-application-id':'L639T95U5A','x-algolia-api-key':'f79c7a8352e9ffbdaec387bf43612ee6'}
+          for name,meta in targets.items():
+            try:
+              r=requests.get(algolia+meta['objectID'],headers=headers,timeout=30)
+              (out/'evidence'/f'algolia_{name}.json').write_bytes(r.content)
+            except Exception as e:
+              (out/'evidence'/f'algolia_{name}.error.txt').write_text(repr(e))
+
+          results=[]
+          for i,item in enumerate(urls):
+            rec=dict(item)
+            try:
+              # First preserve the non-followed redirect evidence.
+              first=s.get(item['url'],allow_redirects=False,timeout=35,stream=True)
+              rec['initial_status']=first.status_code
+              rec['initial_location']=first.headers.get('location')
+              rec['initial_content_type']=first.headers.get('content-type')
+              first.close()
+
+              r=s.get(item['url'],allow_redirects=True,timeout=70,stream=True)
+              data=bytearray()
+              for chunk in r.iter_content(1024*1024):
+                if chunk: data.extend(chunk)
+                if len(data)>30_000_000: raise RuntimeError('response exceeds 30 MB')
+              blob=bytes(data)
+              rec.update({'status':r.status_code,'final_url':r.url,'content_type':r.headers.get('content-type'),'content_disposition':r.headers.get('content-disposition'),'bytes':len(blob),'sha256':hashlib.sha256(blob).hexdigest(),'prefix_hex':blob[:32].hex()})
+              safe=re.sub(r'[^A-Za-z0-9._-]+','_',f'{i:03d}_{item["name"]}_{item["kind"]}')[:220]
+              if blob.startswith(b'PK'):
+                p=out/'evidence'/(safe+'.zip'); p.write_bytes(blob)
+                valid=False; members=[]; error=None
+                try:
+                  with zipfile.ZipFile(p) as z:
+                    members=z.namelist(); error=z.testzip(); valid=error is None
+                except Exception as e: error=repr(e)
+                rec.update({'zip_magic':True,'zip_valid':valid,'zip_test_error':error,'members':members})
+                if valid:
+                  target=out/'valid_packages'/item['name']
+                  if target.exists() and target.read_bytes()!=blob:
+                    target=out/'valid_packages'/(str(i)+'_'+item['name'])
+                  target.write_bytes(blob)
+              else:
+                (out/'evidence'/(safe+'.bin')).write_bytes(blob[:2_000_000])
+                rec.update({'zip_magic':False,'text_prefix':blob[:800].decode('utf-8',errors='replace')})
+            except Exception as e:
+              rec['error']=repr(e)
+            results.append(rec)
+
+          (out/'probe_results.json').write_text(json.dumps(results,indent=2))
+          valid=[r for r in results if r.get('zip_valid')]
+          summary={'targets':targets,'probe_count':len(results),'valid_zip_count':len(valid),'valid_zips':valid}
+          (out/'SUMMARY.json').write_text(json.dumps(summary,indent=2))
+          print(json.dumps(summary,indent=2))
+          PY
+          find out -maxdepth 3 -type f -printf '%p\t%s bytes\n' | sort
+
+      - name: Upload focused probe artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pearson-4cp0-2025-paper2-published-rendition-probe
+          path: out/
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 0
