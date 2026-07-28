@@ -1,0 +1,117 @@
+name: Temporary inspect public 4CP0 page history
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Inspect WordPress objects and public page archives
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out/wp out/archive
+          python - <<'PY'
+          import json, re, urllib.parse
+          from pathlib import Path
+          import requests
+
+          out=Path('out')
+          s=requests.Session(); s.headers.update({'User-Agent':'Mozilla/5.0 Chrome/131 Safari/537.36','Accept':'application/json,text/html,*/*'})
+          base='https://www.exampaperspractice.co.uk'
+          page=base+'/igcse/sciences/computer-science/edexcel-igcse-computer-science-4pc0-past-papers/'
+          report={'page':page,'object_hits':[],'archive_snapshots':[],'candidate_urls':[],'errors':[]}
+
+          def save(name, r):
+              p=out/name
+              p.parent.mkdir(parents=True,exist_ok=True)
+              p.write_bytes(r.content)
+
+          # REST index and public content records.
+          for url,name in [
+              (base+'/wp-json/','wp/index.json'),
+              (base+'/wp-json/wp/v2/types','wp/types.json'),
+              (base+'/wp-json/wp/v2/search?search='+urllib.parse.quote('Edexcel IGCSE Computer Science 4CP0')+'&per_page=100','wp/search.json'),
+              (base+'/wp-json/wp/v2/pages?slug=edexcel-igcse-computer-science-4pc0-past-papers&context=view','wp/page_by_slug.json'),
+              (base+'/wp-json/wp/v2/posts?slug=edexcel-igcse-computer-science-4pc0-past-papers&context=view','wp/post_by_slug.json'),
+          ]:
+              try:
+                  r=s.get(url,timeout=45); save(name,r)
+              except Exception as e: report['errors'].append({'url':url,'error':repr(e)})
+
+          try:
+              types=s.get(base+'/wp-json/wp/v2/types',timeout=45).json()
+          except Exception:
+              types={}
+          rest_bases=[]
+          for t,v in types.items() if isinstance(types,dict) else []:
+              rb=v.get('rest_base')
+              if rb: rest_bases.append((t,rb))
+          for oid in range(142065,142093):
+              for t,rb in rest_bases:
+                  url=f'{base}/wp-json/wp/v2/{rb}/{oid}?context=view'
+                  try:
+                      r=s.get(url,timeout=20)
+                      if r.status_code==200 and r.headers.get('content-type','').startswith('application/json'):
+                          obj=r.json(); report['object_hits'].append({'id':oid,'type':t,'rest_base':rb,'url':url,'object':obj})
+                          save(f'wp/object_{oid}_{t}.json',r)
+                  except Exception:
+                      pass
+
+          # Resolve page ID then try public revisions/autosaves endpoints.
+          page_ids=[]
+          for fn in ['page_by_slug.json','post_by_slug.json','search.json']:
+              p=out/'wp'/fn
+              if not p.exists(): continue
+              try: data=json.loads(p.read_text(errors='ignore'))
+              except Exception: continue
+              if isinstance(data,list):
+                  for x in data:
+                      if isinstance(x,dict) and x.get('id'): page_ids.append(int(x['id']))
+          for pid in sorted(set(page_ids)):
+              for endpoint in [f'pages/{pid}/revisions',f'pages/{pid}/autosaves',f'posts/{pid}/revisions',f'posts/{pid}/autosaves']:
+                  url=f'{base}/wp-json/wp/v2/{endpoint}?per_page=100'
+                  try:
+                      r=s.get(url,timeout=30); save('wp/'+endpoint.replace('/','_')+'.json',r)
+                  except Exception as e: report['errors'].append({'url':url,'error':repr(e)})
+
+          # Wayback CDX and public snapshots of the page.
+          cdx='https://web.archive.org/cdx/search/cdx?url='+urllib.parse.quote(page,safe='')+'&output=json&fl=timestamp,original,statuscode,mimetype,digest,length&filter=statuscode:200&collapse=digest&from=2024&to=2026'
+          try:
+              r=s.get(cdx,timeout=60); save('archive/cdx.json',r)
+              rows=r.json()
+              if isinstance(rows,list) and rows:
+                  for row in rows[1:][-30:]:
+                      ts=row[0]; orig=row[1]
+                      snap=f'https://web.archive.org/web/{ts}id_/{orig}'
+                      try:
+                          sr=s.get(snap,timeout=60)
+                          save(f'archive/{ts}.html',sr)
+                          text=sr.text
+                          urls=set(re.findall(r'https?://[^\s"\'<>]+',text,re.I))
+                          cand=[u.rstrip('.,);]') for u in urls if '4cp0' in u.lower() or any(k in u.lower() for k in ['p2_ms_','p2_qp_','data-files','codes.zip'])]
+                          report['archive_snapshots'].append({'timestamp':ts,'status':sr.status_code,'bytes':len(sr.content),'candidates':cand})
+                          report['candidate_urls'].extend(cand)
+                      except Exception as e: report['errors'].append({'url':snap,'error':repr(e)})
+          except Exception as e: report['errors'].append({'url':cdx,'error':repr(e)})
+
+          report['candidate_urls']=sorted(set(report['candidate_urls']))
+          (out/'SUMMARY.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
+          print(json.dumps({'object_hit_count':len(report['object_hits']),'archive_snapshot_count':len(report['archive_snapshots']),'candidate_url_count':len(report['candidate_urls']),'candidate_urls':report['candidate_urls']},indent=2))
+          PY
+
+      - name: Upload inspection artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pearson-4cp0-public-page-history-inspection
+          path: out/
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 0
