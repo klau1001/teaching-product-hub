@@ -1,15 +1,285 @@
 {
-  "generatedAt": "2026-07-27T21:02:07.511116+00:00",
-  "resourceCount": 105,
+  "generatedAt": "2026-07-28T20:58:44.500765+00:00",
+  "resourceCount": 115,
   "resources": [
     {
+      "id": "drive-1F-68nWeiTYf9StI5SjJBJwawO2C-uHjy",
+      "title": "2627_PL_PHYS-IBSL_TOPIC-B_EXERCISE-001_TEACHER_v1.6.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · PL · IBSL · Topic B · Exercise 01 — Electricity (B.5 Current and circuits)",
+      "url": "https://drive.google.com/file/d/1F-68nWeiTYf9StI5SjJBJwawO2C-uHjy/view?usp=drivesdk",
+      "created": "2026-07-28T18:21:03.998Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "PL",
+        "teacher",
+        "exercise",
+        "electric"
+      ]
+    },
+    {
+      "id": "drive-1hHxgHjm36JLCwby2PBQrFJ5lbJ0wEGyC",
+      "title": "2627_PL_PHYS-IBSL_TOPIC-B_EXERCISE-001_STUDENT_v1.6.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · PL · IBSL · Topic B · Exercise 01 — Electricity (B.5 Current and circuits)",
+      "url": "https://drive.google.com/file/d/1hHxgHjm36JLCwby2PBQrFJ5lbJ0wEGyC/view?usp=drivesdk",
+      "created": "2026-07-28T18:20:21.826Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "PL",
+        "student",
+        "exercise",
+        "electric"
+      ]
+    },
+    {
+      "id": "drive-1V_gfuPMbDEPHboLpuDSfNgvIpK-IYVAH",
+      "title": "2627_PL_PHYS-IBHL_TOPIC-A_EXERCISE-003_TEACHER_v1.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 03 — A.2 Forces, Momentum and Circular Motion",
+      "url": "https://drive.google.com/file/d/1V_gfuPMbDEPHboLpuDSfNgvIpK-IYVAH/view?usp=drivesdk",
+      "created": "2026-07-28T17:02:16.498Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "PL",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1yabjFS2AdJt7hyy9nUazsTJdGCn_zV_W",
+      "title": "2627_PL_PHYS-IBHL_TOPIC-A_EXERCISE-003_STUDENT_v1.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 03 — A.2 Forces, Momentum and Circular Motion",
+      "url": "https://drive.google.com/file/d/1yabjFS2AdJt7hyy9nUazsTJdGCn_zV_W/view?usp=drivesdk",
+      "created": "2026-07-28T17:02:02.357Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "PL",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
+      "title": "01 NTK Master Index",
+      "source": "Teaching Tool",
+      "kind": "sheet",
+      "group": "NTK",
+      "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
+      "created": "2026-07-28T09:56:22.537Z",
+      "tags": [
+        "NTK"
+      ]
+    },
+    {
+      "id": "drive-1Iyg-hZeT6d28EUlbU0fBH0PcEfVedCtZ",
+      "title": "Exercise 03 — Mass Defect, Binding Energy, Fission and Fusion — Teacher (v3.2)",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 03 — Mass Defect, Binding Energy, Fission and Fusion",
+      "url": "https://drive.google.com/file/d/1Iyg-hZeT6d28EUlbU0fBH0PcEfVedCtZ/view?usp=drivesdk",
+      "created": "2026-07-28T08:08:05.860Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-173xWZOVFKHk8EX1ebiypMAXAaimDcsY-",
+      "title": "2627_PL_PHYS-IBHL_TOPIC-A_EXERCISE-002_TEACHER_v1.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 02 — Forces",
+      "url": "https://drive.google.com/file/d/173xWZOVFKHk8EX1ebiypMAXAaimDcsY-/view?usp=drivesdk",
+      "created": "2026-07-28T07:10:09.692Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "PL",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1Sd9IevBC3izV4rni7J8W0pjsOkFKmIPy",
+      "title": "2627_PL_PHYS-IBHL_TOPIC-A_EXERCISE-002_STUDENT_v1.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 02 — Forces",
+      "url": "https://drive.google.com/file/d/1Sd9IevBC3izV4rni7J8W0pjsOkFKmIPy/view?usp=drivesdk",
+      "created": "2026-07-28T07:09:54.176Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "PL",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1eYRDuhLtkLe56j-i2F7t4La7fCJNKtlz",
+      "title": "2627_SCO_PHYS-IG1_MOD-A-EXERCISE-001_TEACHER_v1.3.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Exercise · Exercise 01 — Density and Pressure",
+      "url": "https://drive.google.com/file/d/1eYRDuhLtkLe56j-i2F7t4La7fCJNKtlz/view?usp=drivesdk",
+      "created": "2026-07-28T04:59:36.576Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1J5SgqDjWd6bV4M4WQD5-g6FiTcUHBtEr",
+      "title": "2627_SCO_PHYS-IG1_MOD-A-EXERCISE-001_STUDENT_v1.3.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Exercise · Exercise 01 — Density and Pressure",
+      "url": "https://drive.google.com/file/d/1J5SgqDjWd6bV4M4WQD5-g6FiTcUHBtEr/view?usp=drivesdk",
+      "created": "2026-07-28T04:59:25.304Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1933t0FoPpTuMm1z63FbdeYOJRPM9gwGMsUBDhpOb3J4",
+      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_TEACHER_NATIVE-MIRROR_v4.0",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
+      "url": "https://docs.google.com/document/d/1933t0FoPpTuMm1z63FbdeYOJRPM9gwGMsUBDhpOb3J4/edit?usp=drivesdk",
+      "created": "2026-07-28T04:45:20.237Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "quiz"
+      ]
+    },
+    {
+      "id": "drive-1oZutp7_3deRXidKgKTHq4zD5ghUrBBGje1Yx_bD4AUs",
+      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_STUDENT_NATIVE-MIRROR_v4.0",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
+      "url": "https://docs.google.com/document/d/1oZutp7_3deRXidKgKTHq4zD5ghUrBBGje1Yx_bD4AUs/edit?usp=drivesdk",
+      "created": "2026-07-28T04:45:01.962Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "student",
+        "quiz"
+      ]
+    },
+    {
+      "id": "drive-1jH-cl47VoXPG90Z42mxW9Agjxpa4gq3s",
+      "title": "2627_SCO_PHYS-IG1_MOD-A-EXERCISE-002_TEACHER_v1.2.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Exercise · Exercise 02 — Change of State and Specific Heat Capacity",
+      "url": "https://drive.google.com/file/d/1jH-cl47VoXPG90Z42mxW9Agjxpa4gq3s/view?usp=drivesdk",
+      "created": "2026-07-28T03:46:40.395Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1R28N-9PAR1AtIALyBmwjmiJbJd91mC6Y",
+      "title": "2627_SCO_PHYS-IG1_MOD-A-EXERCISE-002_STUDENT_v1.2.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Exercise · Exercise 02 — Change of State and Specific Heat Capacity",
+      "url": "https://drive.google.com/file/d/1R28N-9PAR1AtIALyBmwjmiJbJd91mC6Y/view?usp=drivesdk",
+      "created": "2026-07-28T03:46:24.176Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-18jeXOuIK3QRY7SGKhZw5tNPP-a7PGOaB",
+      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_HARD_TEACHER_v3.2.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics · Published · HARD — v3.2",
+      "url": "https://drive.google.com/file/d/18jeXOuIK3QRY7SGKhZw5tNPP-a7PGOaB/view?usp=drivesdk",
+      "created": "2026-07-28T03:28:48.646Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "quiz"
+      ]
+    },
+    {
+      "id": "drive-1jwkintWGGDYfsnDL7PVXrZU9Se5qb8s4",
+      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_HARD_STUDENT_v3.2.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics · Published · HARD — v3.2",
+      "url": "https://drive.google.com/file/d/1jwkintWGGDYfsnDL7PVXrZU9Se5qb8s4/view?usp=drivesdk",
+      "created": "2026-07-28T03:28:38.349Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "student",
+        "quiz"
+      ]
+    },
+    {
+      "id": "drive-1qGPINenPboT4iODTNFaX4LcbhcbRlV6b",
+      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_HARD_EQUATION-LIST_v3.2.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics · Published · HARD — v3.2",
+      "url": "https://drive.google.com/file/d/1qGPINenPboT4iODTNFaX4LcbhcbRlV6b/view?usp=drivesdk",
+      "created": "2026-07-28T03:28:28.670Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "quiz"
+      ]
+    },
+    {
       "id": "drive-1je8sAVOdozI31b2-TPGglO_rAGZGgkSA",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_EQUATION-LIST_v1.3.pdf",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_EQUATION-LIST_v1.4.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 03 — B.3 Gas Laws · Equation_List",
       "url": "https://drive.google.com/file/d/1je8sAVOdozI31b2-TPGglO_rAGZGgkSA/view?usp=drivesdk",
-      "created": "2026-07-27T17:21:01.240Z",
+      "created": "2026-07-28T00:02:26.993Z",
       "tags": [
         "IB",
         "NTK",
@@ -19,12 +289,12 @@
     },
     {
       "id": "drive-1bipczkNPBLgk-ZLffO6iUvHLTjsTKIS9",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_TEACHER_v1.3.pdf",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_TEACHER_v1.4.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 03 — B.3 Gas Laws",
       "url": "https://drive.google.com/file/d/1bipczkNPBLgk-ZLffO6iUvHLTjsTKIS9/view?usp=drivesdk",
-      "created": "2026-07-27T17:19:59.004Z",
+      "created": "2026-07-28T00:02:14.345Z",
       "tags": [
         "IB",
         "NTK",
@@ -35,12 +305,12 @@
     },
     {
       "id": "drive-1nilGLI7e3ov8y1P1Cfc0fLqPc9VJuYTE",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_STUDENT_v1.3.pdf",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_STUDENT_v1.4.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 03 — B.3 Gas Laws",
       "url": "https://drive.google.com/file/d/1nilGLI7e3ov8y1P1Cfc0fLqPc9VJuYTE/view?usp=drivesdk",
-      "created": "2026-07-27T17:19:46.300Z",
+      "created": "2026-07-27T23:59:45.260Z",
       "tags": [
         "IB",
         "NTK",
@@ -123,36 +393,6 @@
       "created": "2026-07-27T16:22:33.166Z",
       "tags": [
         "IB"
-      ]
-    },
-    {
-      "id": "drive-1tsNQnvOI5Twe4FKkSibMsymJr0iC1fzC",
-      "title": "2627_SCO_PHYS-IG1_MOD-A-EXERCISE-001_TEACHER_v1.2.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Exercise · Exercise 01 — Density and Pressure",
-      "url": "https://drive.google.com/file/d/1tsNQnvOI5Twe4FKkSibMsymJr0iC1fzC/view?usp=drivesdk",
-      "created": "2026-07-27T12:42:05.757Z",
-      "tags": [
-        "NTK",
-        "Summer CO",
-        "teacher",
-        "exercise"
-      ]
-    },
-    {
-      "id": "drive-1rCu_Z5SHneA3fdm3O0kZF8OsU3ZsK5Qn",
-      "title": "2627_SCO_PHYS-IG1_MOD-A-EXERCISE-001_STUDENT_v1.2.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Exercise · Exercise 01 — Density and Pressure",
-      "url": "https://drive.google.com/file/d/1rCu_Z5SHneA3fdm3O0kZF8OsU3ZsK5Qn/view?usp=drivesdk",
-      "created": "2026-07-27T12:41:52.429Z",
-      "tags": [
-        "NTK",
-        "Summer CO",
-        "student",
-        "exercise"
       ]
     },
     {
@@ -382,68 +622,6 @@
       ]
     },
     {
-      "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
-      "title": "01 NTK Master Index",
-      "source": "Teaching Tool",
-      "kind": "sheet",
-      "group": "NTK",
-      "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
-      "created": "2026-07-26T18:36:24.252Z",
-      "tags": [
-        "NTK"
-      ]
-    },
-    {
-      "id": "drive-1qGPINenPboT4iODTNFaX4LcbhcbRlV6b",
-      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_EQUATION-LIST_v3.2.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
-      "url": "https://drive.google.com/file/d/1qGPINenPboT4iODTNFaX4LcbhcbRlV6b/view?usp=drivesdk",
-      "created": "2026-07-24T07:45:02.856Z",
-      "tags": [
-        "Physics",
-        "IB",
-        "NTK",
-        "Summer CO",
-        "quiz"
-      ]
-    },
-    {
-      "id": "drive-1jwkintWGGDYfsnDL7PVXrZU9Se5qb8s4",
-      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_STUDENT_v3.2.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
-      "url": "https://drive.google.com/file/d/1jwkintWGGDYfsnDL7PVXrZU9Se5qb8s4/view?usp=drivesdk",
-      "created": "2026-07-24T07:44:49.371Z",
-      "tags": [
-        "Physics",
-        "IB",
-        "NTK",
-        "Summer CO",
-        "student",
-        "quiz"
-      ]
-    },
-    {
-      "id": "drive-18jeXOuIK3QRY7SGKhZw5tNPP-a7PGOaB",
-      "title": "2627_SCO_PHYS-IBH2_MOD-C_QUIZ-001_TEACHER_v3.2.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Quiz · Quiz 01 — Atomic & Nuclear Physics",
-      "url": "https://drive.google.com/file/d/18jeXOuIK3QRY7SGKhZw5tNPP-a7PGOaB/view?usp=drivesdk",
-      "created": "2026-07-24T07:42:38.000Z",
-      "tags": [
-        "Physics",
-        "IB",
-        "NTK",
-        "Summer CO",
-        "teacher",
-        "quiz"
-      ]
-    },
-    {
       "id": "drive-1pqJqT9jvT8MdQHGnsAxPLkBq26vqvWxo",
       "title": "2627_SCO_PHYS-IG2_MOD-C_QUIZ-002_TEACHER_v1.10.pdf",
       "source": "Teaching Tool",
@@ -471,22 +649,6 @@
         "Summer CO",
         "student",
         "quiz"
-      ]
-    },
-    {
-      "id": "drive-1Iyg-hZeT6d28EUlbU0fBH0PcEfVedCtZ",
-      "title": "2627_SCO_PHYS-IBH2_MOD-C_EXERCISE-003_TEACHER_v3.2(1).pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 03 — Mass Defect, Binding Energy, Fission and Fusion",
-      "url": "https://drive.google.com/file/d/1Iyg-hZeT6d28EUlbU0fBH0PcEfVedCtZ/view?usp=drivesdk",
-      "created": "2026-07-23T05:02:54.000Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "teacher",
-        "exercise"
       ]
     },
     {
@@ -599,7 +761,7 @@
       "title": "MOD-C-Exercise-01-Teacher-v3.4.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 01 — Spectra, Photons and the Bohr Model",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 01 — Spectra, Photons and the Bohr Model · Published",
       "url": "https://drive.google.com/file/d/1y76T2yrkiJmd9B_Vm2idBbmTJWyyWfM-/view?usp=drivesdk",
       "created": "2026-07-20T05:04:16.508Z",
       "tags": [
@@ -615,7 +777,7 @@
       "title": "MOD-C-Exercise-01-Student-v3.4.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 01 — Spectra, Photons and the Bohr Model",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD C · Exercise · Exercise 01 — Spectra, Photons and the Bohr Model · Published",
       "url": "https://drive.google.com/file/d/1jaNhe4QpTCL4KJRPVldn4A0uHCG0nRD3/view?usp=drivesdk",
       "created": "2026-07-20T05:04:08.707Z",
       "tags": [
@@ -707,7 +869,7 @@
       "title": "Quiz 01 — Fields & Charged-Particle Motion — Teacher (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD B · Quiz · Quiz 01 — Fields & Charged-Particle Motion",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD B · Quiz · Quiz 01 — Fields & Charged-Particle Motion · Published",
       "url": "https://drive.google.com/file/d/1vgypqj7vi1R-R5TGR4QlaekDRVE6dd7K/view?usp=drivesdk",
       "created": "2026-07-17T04:42:27.392Z",
       "tags": [
@@ -724,7 +886,7 @@
       "title": "Quiz 01 — Fields & Charged-Particle Motion — Student (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD B · Quiz · Quiz 01 — Fields & Charged-Particle Motion",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD B · Quiz · Quiz 01 — Fields & Charged-Particle Motion · Published",
       "url": "https://drive.google.com/file/d/113lmwvkTnP1fKlUL1LTV2fiNxc3qWK6n/view?usp=drivesdk",
       "created": "2026-07-17T04:42:21.471Z",
       "tags": [
@@ -823,7 +985,7 @@
       "title": "Quiz 01B — Kinematics & Projectile Motion — Student (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion · Published",
       "url": "https://drive.google.com/file/d/1wK3kEqmAnLwaN33X4ff14hqNGYi5nknf/view?usp=drivesdk",
       "created": "2026-07-17T03:35:35.177Z",
       "tags": [
@@ -839,7 +1001,7 @@
       "title": "Quiz 01B — Kinematics & Projectile Motion — Teacher (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD A · Quiz · Quiz 01B — Kinematics & Projectile Motion · Published",
       "url": "https://drive.google.com/file/d/182M_U2gbYsiuyGaKHdtbYVHwV_PyV1Oh/view?usp=drivesdk",
       "created": "2026-07-17T03:35:26.674Z",
       "tags": [
@@ -946,7 +1108,7 @@
       "title": "Exercise 01 — Projectile Motion — Student (v2.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 01 — Projectile Motion",
+      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 01 — Projectile Motion · Published",
       "url": "https://drive.google.com/file/d/1nw7dcdV2wbumv5CtGqKWP_QpgZSPTBmf/view?usp=drivesdk",
       "created": "2026-07-17T03:33:02.026Z",
       "tags": [
@@ -963,7 +1125,7 @@
       "title": "Exercise 01 — Projectile Motion — Teacher (v2.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 01 — Projectile Motion",
+      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 01 — Projectile Motion · Published",
       "url": "https://drive.google.com/file/d/1316t2bMlXtpVFnRge8TTYUcKPXeATZAW/view?usp=drivesdk",
       "created": "2026-07-17T03:32:50.935Z",
       "tags": [
@@ -980,7 +1142,7 @@
       "title": "Exercise 01 — Fields — Student (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD B · Exercise · Exercise 01 — Fields",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD B · Exercise · Exercise 01 — Fields · Published",
       "url": "https://drive.google.com/file/d/1xlKRi3n4JJi2FQBsuFhBEyiGj_kmDTwA/view?usp=drivesdk",
       "created": "2026-07-17T03:30:37.224Z",
       "tags": [
@@ -997,7 +1159,7 @@
       "title": "Exercise 01 — Fields — Teacher (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD B · Exercise · Exercise 01 — Fields",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD B · Exercise · Exercise 01 — Fields · Published",
       "url": "https://drive.google.com/file/d/1UKr_pr7KT1sHaS-tpt5nVr_q4NiKM7Px/view?usp=drivesdk",
       "created": "2026-07-17T03:30:25.722Z",
       "tags": [
@@ -1014,7 +1176,7 @@
       "title": "Exercise 02 — Motion in Electromagnetic Fields — Student (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD B · Exercise · Exercise 02 — Motion in Electromagnetic Fields",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD B · Exercise · Exercise 02 — Motion in Electromagnetic Fields · Published",
       "url": "https://drive.google.com/file/d/1OcQOpE2aQkjtFWApl3mNlBPsFzjsnHqC/view?usp=drivesdk",
       "created": "2026-07-17T03:29:58.139Z",
       "tags": [
@@ -1032,7 +1194,7 @@
       "title": "Exercise 02 — Motion in Electromagnetic Fields — Teacher (v1.0)",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD B · Exercise · Exercise 02 — Motion in Electromagnetic Fields",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD B · Exercise · Exercise 02 — Motion in Electromagnetic Fields · Published",
       "url": "https://drive.google.com/file/d/1wgya539GRQkpPTm6v1aZMKpYNiNUFnBT/view?usp=drivesdk",
       "created": "2026-07-17T03:29:48.287Z",
       "tags": [
