@@ -1,49 +1,15 @@
 {
-  "generatedAt": "2026-07-28T20:58:44.500765+00:00",
-  "resourceCount": 115,
+  "generatedAt": "2026-07-29T20:43:04.470225+00:00",
+  "resourceCount": 118,
   "resources": [
     {
-      "id": "drive-1F-68nWeiTYf9StI5SjJBJwawO2C-uHjy",
-      "title": "2627_PL_PHYS-IBSL_TOPIC-B_EXERCISE-001_TEACHER_v1.6.pdf",
+      "id": "drive-1FpMroZ2UzNI7bTJhHyoQXI93vVetq_Yg",
+      "title": "2627_PL_PHYS-IBHL_TOPIC-A_EXERCISE-002_TEACHER_v1.6.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · PL · IBSL · Topic B · Exercise 01 — Electricity (B.5 Current and circuits)",
-      "url": "https://drive.google.com/file/d/1F-68nWeiTYf9StI5SjJBJwawO2C-uHjy/view?usp=drivesdk",
-      "created": "2026-07-28T18:21:03.998Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "PL",
-        "teacher",
-        "exercise",
-        "electric"
-      ]
-    },
-    {
-      "id": "drive-1hHxgHjm36JLCwby2PBQrFJ5lbJ0wEGyC",
-      "title": "2627_PL_PHYS-IBSL_TOPIC-B_EXERCISE-001_STUDENT_v1.6.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · PL · IBSL · Topic B · Exercise 01 — Electricity (B.5 Current and circuits)",
-      "url": "https://drive.google.com/file/d/1hHxgHjm36JLCwby2PBQrFJ5lbJ0wEGyC/view?usp=drivesdk",
-      "created": "2026-07-28T18:20:21.826Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "PL",
-        "student",
-        "exercise",
-        "electric"
-      ]
-    },
-    {
-      "id": "drive-1V_gfuPMbDEPHboLpuDSfNgvIpK-IYVAH",
-      "title": "2627_PL_PHYS-IBHL_TOPIC-A_EXERCISE-003_TEACHER_v1.1.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 03 — A.2 Forces, Momentum and Circular Motion",
-      "url": "https://drive.google.com/file/d/1V_gfuPMbDEPHboLpuDSfNgvIpK-IYVAH/view?usp=drivesdk",
-      "created": "2026-07-28T17:02:16.498Z",
+      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 02 — Forces",
+      "url": "https://drive.google.com/file/d/1FpMroZ2UzNI7bTJhHyoQXI93vVetq_Yg/view?usp=drivesdk",
+      "created": "2026-07-29T19:16:57.397Z",
       "tags": [
         "IB",
         "NTK",
@@ -53,13 +19,13 @@
       ]
     },
     {
-      "id": "drive-1yabjFS2AdJt7hyy9nUazsTJdGCn_zV_W",
-      "title": "2627_PL_PHYS-IBHL_TOPIC-A_EXERCISE-003_STUDENT_v1.1.pdf",
+      "id": "drive-1Nel5V1vnq6MCXyJ67i1fqeGPhS-RuSKX",
+      "title": "2627_PL_PHYS-IBHL_TOPIC-A_EXERCISE-002_STUDENT_v1.6.pdf",
       "source": "Teaching Tool",
       "kind": "pdf",
-      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 03 — A.2 Forces, Momentum and Circular Motion",
-      "url": "https://drive.google.com/file/d/1yabjFS2AdJt7hyy9nUazsTJdGCn_zV_W/view?usp=drivesdk",
-      "created": "2026-07-28T17:02:02.357Z",
+      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 02 — Forces",
+      "url": "https://drive.google.com/file/d/1Nel5V1vnq6MCXyJ67i1fqeGPhS-RuSKX/view?usp=drivesdk",
+      "created": "2026-07-29T19:16:47.755Z",
       "tags": [
         "IB",
         "NTK",
@@ -75,9 +41,164 @@
       "kind": "sheet",
       "group": "NTK",
       "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
-      "created": "2026-07-28T09:56:22.537Z",
+      "created": "2026-07-29T11:27:35.797Z",
       "tags": [
         "NTK"
+      ]
+    },
+    {
+      "id": "drive-13ZqLpty8gsQKZNWhNNDZItG3NfBuZU0sRwNS294NOfU",
+      "title": "2627-SCO-PHYS-IBH2-MOD-A-EXERCISE-003 — Native Mirror current — v1.5 Drive readback PASS",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 03 — B.3 Gas Laws",
+      "url": "https://docs.google.com/document/d/13ZqLpty8gsQKZNWhNNDZItG3NfBuZU0sRwNS294NOfU/edit?usp=drivesdk",
+      "created": "2026-07-29T07:24:35.111Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-12HmzW3BuMeyZ-kVhgNOyFsG2-S4Smmo8",
+      "title": "2627_PL_PHYS-IBSL_TOPIC-B_EXERCISE-001_TEACHER_v1.10.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · PL · IBSL · Topic B · Exercise 01 — Electricity (B.5 Current and circuits)",
+      "url": "https://drive.google.com/file/d/12HmzW3BuMeyZ-kVhgNOyFsG2-S4Smmo8/view?usp=drivesdk",
+      "created": "2026-07-29T07:17:28.022Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "PL",
+        "teacher",
+        "exercise",
+        "electric"
+      ]
+    },
+    {
+      "id": "drive-1X7mtsthePAuObCSRzOhXiP2yaO2YKppQ",
+      "title": "2627_PL_PHYS-IBSL_TOPIC-B_EXERCISE-001_STUDENT_v1.10.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · PL · IBSL · Topic B · Exercise 01 — Electricity (B.5 Current and circuits)",
+      "url": "https://drive.google.com/file/d/1X7mtsthePAuObCSRzOhXiP2yaO2YKppQ/view?usp=drivesdk",
+      "created": "2026-07-29T07:17:14.848Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "PL",
+        "student",
+        "exercise",
+        "electric"
+      ]
+    },
+    {
+      "id": "drive-1s1bt4rmk12QpaWFHoJ2SZeLo7q6c_nJm",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_EQUATION-LIST_v1.5.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 03 — B.3 Gas Laws · Equation_List",
+      "url": "https://drive.google.com/file/d/1s1bt4rmk12QpaWFHoJ2SZeLo7q6c_nJm/view?usp=drivesdk",
+      "created": "2026-07-29T07:17:08.608Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1L8WN8U7R-ecWABnA8tjy_lKHBQlKQ5QQ",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_TEACHER_v1.5.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 03 — B.3 Gas Laws",
+      "url": "https://drive.google.com/file/d/1L8WN8U7R-ecWABnA8tjy_lKHBQlKQ5QQ/view?usp=drivesdk",
+      "created": "2026-07-29T07:15:49.929Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1lkmQz8XdjpXJirffZq3kmvlXTQwg1kik",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_STUDENT_v1.5.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 03 — B.3 Gas Laws",
+      "url": "https://drive.google.com/file/d/1lkmQz8XdjpXJirffZq3kmvlXTQwg1kik/view?usp=drivesdk",
+      "created": "2026-07-29T07:15:36.699Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1v1IWp1WlEeJktesgxMOenETssDmKSW-i",
+      "title": "2627_PL_PHYS-IBHL_TOPIC-A_EXERCISE-003_TEACHER_v1.3.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 03 — A.2 Forces, Momentum and Circular Motion",
+      "url": "https://drive.google.com/file/d/1v1IWp1WlEeJktesgxMOenETssDmKSW-i/view?usp=drivesdk",
+      "created": "2026-07-29T07:07:04.408Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "PL",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-15MjnkzG5AQu8zBoWlacCDaS8B4jc7-EZ",
+      "title": "2627_PL_PHYS-IBHL_TOPIC-A_EXERCISE-003_STUDENT_v1.3.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 03 — A.2 Forces, Momentum and Circular Motion",
+      "url": "https://drive.google.com/file/d/15MjnkzG5AQu8zBoWlacCDaS8B4jc7-EZ/view?usp=drivesdk",
+      "created": "2026-07-29T07:05:06.724Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "PL",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1gdyQykg-NggnTJLixwGcsd31zh5iHqcv-ttB2M-nW_U",
+      "title": "2627-SCO-PHYS-IBH2-MOD-A-EXERCISE-001 — Native Mirror current — SHC v3.0 Drive readback PASS",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 01 — Specific Heat, Latent Heat and Internal Energy",
+      "url": "https://docs.google.com/document/d/1gdyQykg-NggnTJLixwGcsd31zh5iHqcv-ttB2M-nW_U/edit?usp=drivesdk",
+      "created": "2026-07-29T05:12:40.800Z",
+      "tags": [
+        "IB",
+        "NTK",
+        "Summer CO",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1oLt3Fb4wdVbcPLsStUcHBwdcdIFAmrgO",
+      "title": "mathematics-analysis-and-approaches-SL-formula-booklet-v1.0.pdf",
+      "source": "Academic",
+      "kind": "pdf",
+      "group": "Data Booklets · Mathematics",
+      "url": "https://drive.google.com/file/d/1oLt3Fb4wdVbcPLsStUcHBwdcdIFAmrgO/view?usp=drivesdk",
+      "created": "2026-07-29T05:04:35.081Z",
+      "tags": [
+        "data booklet"
       ]
     },
     {
@@ -93,38 +214,6 @@
         "NTK",
         "Summer CO",
         "teacher",
-        "exercise"
-      ]
-    },
-    {
-      "id": "drive-173xWZOVFKHk8EX1ebiypMAXAaimDcsY-",
-      "title": "2627_PL_PHYS-IBHL_TOPIC-A_EXERCISE-002_TEACHER_v1.1.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 02 — Forces",
-      "url": "https://drive.google.com/file/d/173xWZOVFKHk8EX1ebiypMAXAaimDcsY-/view?usp=drivesdk",
-      "created": "2026-07-28T07:10:09.692Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "PL",
-        "teacher",
-        "exercise"
-      ]
-    },
-    {
-      "id": "drive-1Sd9IevBC3izV4rni7J8W0pjsOkFKmIPy",
-      "title": "2627_PL_PHYS-IBHL_TOPIC-A_EXERCISE-002_STUDENT_v1.1.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · PL · IBHL · Topic A · Exercise 02 — Forces",
-      "url": "https://drive.google.com/file/d/1Sd9IevBC3izV4rni7J8W0pjsOkFKmIPy/view?usp=drivesdk",
-      "created": "2026-07-28T07:09:54.176Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "PL",
-        "student",
         "exercise"
       ]
     },
@@ -270,53 +359,6 @@
         "NTK",
         "Summer CO",
         "quiz"
-      ]
-    },
-    {
-      "id": "drive-1je8sAVOdozI31b2-TPGglO_rAGZGgkSA",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_EQUATION-LIST_v1.4.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 03 — B.3 Gas Laws · Equation_List",
-      "url": "https://drive.google.com/file/d/1je8sAVOdozI31b2-TPGglO_rAGZGgkSA/view?usp=drivesdk",
-      "created": "2026-07-28T00:02:26.993Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "exercise"
-      ]
-    },
-    {
-      "id": "drive-1bipczkNPBLgk-ZLffO6iUvHLTjsTKIS9",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_TEACHER_v1.4.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 03 — B.3 Gas Laws",
-      "url": "https://drive.google.com/file/d/1bipczkNPBLgk-ZLffO6iUvHLTjsTKIS9/view?usp=drivesdk",
-      "created": "2026-07-28T00:02:14.345Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "teacher",
-        "exercise"
-      ]
-    },
-    {
-      "id": "drive-1nilGLI7e3ov8y1P1Cfc0fLqPc9VJuYTE",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_EXERCISE-003_STUDENT_v1.4.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Exercise · Exercise 03 — B.3 Gas Laws",
-      "url": "https://drive.google.com/file/d/1nilGLI7e3ov8y1P1Cfc0fLqPc9VJuYTE/view?usp=drivesdk",
-      "created": "2026-07-27T23:59:45.260Z",
-      "tags": [
-        "IB",
-        "NTK",
-        "Summer CO",
-        "student",
-        "exercise"
       ]
     },
     {
