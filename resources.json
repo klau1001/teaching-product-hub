@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-30T20:55:45.743034+00:00",
-  "resourceCount": 159,
+  "generatedAt": "2026-07-31T20:53:14.982704+00:00",
+  "resourceCount": 189,
   "resources": [
     {
       "id": "drive-1falkHQ555VykrUTiqU4jzEE-tO4PjRWiMoS8i5h_iL4",
@@ -9,7 +9,7 @@
       "kind": "doc",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B",
       "url": "https://docs.google.com/document/d/1falkHQ555VykrUTiqU4jzEE-tO4PjRWiMoS8i5h_iL4/edit?usp=drivesdk",
-      "created": "2026-07-30T18:43:58.635Z",
+      "created": "2026-07-31T17:55:47.957Z",
       "tags": [
         "NTK",
         "Summer CO",
@@ -17,13 +17,27 @@
       ]
     },
     {
-      "id": "drive-19agSRZo8JgnHLEQQsYwaXZ3sp6gUgT_EhLKOhvYhl18",
-      "title": "00 Scope and Production Plan — Summer CO PHYS IG1 MOD A",
+      "id": "drive-1vM_m5wMzbz2hJJ5UpjiDPcqWMDNO_IfQylIy6xPj4bc",
+      "title": "00 MOD B v2.2 — Step 2 Circuit Diagram Rebuild Record",
       "source": "Teaching Tool",
       "kind": "doc",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A",
-      "url": "https://docs.google.com/document/d/19agSRZo8JgnHLEQQsYwaXZ3sp6gUgT_EhLKOhvYhl18/edit?usp=drivesdk",
-      "created": "2026-07-30T18:20:46.380Z",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · v2.2 — Diagram, Typography and Quiz Rebuild · Step 2 — Circuit Diagram Rebuild",
+      "url": "https://docs.google.com/document/d/1vM_m5wMzbz2hJJ5UpjiDPcqWMDNO_IfQylIy6xPj4bc/edit?usp=drivesdk",
+      "created": "2026-07-31T17:55:04.715Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "quiz"
+      ]
+    },
+    {
+      "id": "drive-13XIjpRdhBa9ap5ktgY9j6nsHxwQZPEQpxtPQAP3JjAs",
+      "title": "00 Course Scope and Product Plan — Summer CO GCEAS MOD B",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS GCEAS · MOD B",
+      "url": "https://docs.google.com/document/d/13XIjpRdhBa9ap5ktgY9j6nsHxwQZPEQpxtPQAP3JjAs/edit?usp=drivesdk",
+      "created": "2026-07-31T17:49:27.786Z",
       "tags": [
         "NTK",
         "Summer CO",
@@ -31,13 +45,27 @@
       ]
     },
     {
-      "id": "drive-1SPqkxFs2yolXhVD-yU3K-VUWNXWCcdjENm7MC03Alok",
-      "title": "01 Drive Publication Closeout — Summer CO PHYS IG2 MOD B",
+      "id": "drive-1JIyryf68-0fbzcTsv8boD0r9jn59lwMj62H2JlN6g-Y",
+      "title": "00 v2.2 Step 1 — Defect Register, Scope Lock and Version Strategy",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · v2.2 — Diagram, Typography and Quiz Rebuild",
+      "url": "https://docs.google.com/document/d/1JIyryf68-0fbzcTsv8boD0r9jn59lwMj62H2JlN6g-Y/edit?usp=drivesdk",
+      "created": "2026-07-31T17:27:32.464Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "quiz"
+      ]
+    },
+    {
+      "id": "drive-1rjMb1snv_8vPcrBFdroUA4hH94rz9IuLWKpNKnOevEE",
+      "title": "02 v2.0 Reference-Led Rebuild Handoff — Summer CO PHYS IG2 MOD B",
       "source": "Teaching Tool",
       "kind": "doc",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IG2 · MOD B",
-      "url": "https://docs.google.com/document/d/1SPqkxFs2yolXhVD-yU3K-VUWNXWCcdjENm7MC03Alok/edit?usp=drivesdk",
-      "created": "2026-07-30T17:28:28.792Z",
+      "url": "https://docs.google.com/document/d/1rjMb1snv_8vPcrBFdroUA4hH94rz9IuLWKpNKnOevEE/edit?usp=drivesdk",
+      "created": "2026-07-31T17:26:13.821Z",
       "tags": [
         "NTK",
         "Summer CO"
@@ -50,7 +78,7 @@
       "kind": "doc",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IG2 · MOD B",
       "url": "https://docs.google.com/document/d/1mtt0s8L_fK2LgfdgOtQOyIh6NgXTsVWUs4IE5ZDiUCk/edit?usp=drivesdk",
-      "created": "2026-07-30T17:28:09.581Z",
+      "created": "2026-07-31T17:25:53.340Z",
       "tags": [
         "NTK",
         "Summer CO",
@@ -59,13 +87,581 @@
       ]
     },
     {
-      "id": "drive-1rjMb1snv_8vPcrBFdroUA4hH94rz9IuLWKpNKnOevEE",
-      "title": "02 v2.0 Reference-Led Rebuild Handoff — Summer CO PHYS IG2 MOD B",
+      "id": "drive-19ZnEWgJqVTtktaGnoYV8m5-TL0AoP8cq",
+      "title": "2627-SUMMERCO-PHYS-IGCS1-MODB-QUIZ-001_Teacher_v2.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · v2.1 — TT-APS 1.2.0 Diagram and Template Correction · Quiz 01 — Electricity v2.1 · Release",
+      "url": "https://drive.google.com/file/d/19ZnEWgJqVTtktaGnoYV8m5-TL0AoP8cq/view?usp=drivesdk",
+      "created": "2026-07-31T12:55:09.563Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "PL",
+        "teacher",
+        "quiz",
+        "electric"
+      ]
+    },
+    {
+      "id": "drive-19kh5IOI1NOEVKIgv9BRFX00b4C46eeBy",
+      "title": "2627-SUMMERCO-PHYS-IGCS1-MODB-QUIZ-001_Student_v2.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · v2.1 — TT-APS 1.2.0 Diagram and Template Correction · Quiz 01 — Electricity v2.1 · Release",
+      "url": "https://drive.google.com/file/d/19kh5IOI1NOEVKIgv9BRFX00b4C46eeBy/view?usp=drivesdk",
+      "created": "2026-07-31T12:54:57.067Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "PL",
+        "student",
+        "quiz",
+        "electric"
+      ]
+    },
+    {
+      "id": "drive-1bSxLy7BtZq-7lp7nrllCTx3QqKuzlR5z",
+      "title": "2627-SUMMERCO-PHYS-IGCS1-MODB-EXERCISE-005_Teacher_v2.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · v2.1 — TT-APS 1.2.0 Diagram and Template Correction · Exercise 05 — Mains Electricity v2.1 · Release",
+      "url": "https://drive.google.com/file/d/1bSxLy7BtZq-7lp7nrllCTx3QqKuzlR5z/view?usp=drivesdk",
+      "created": "2026-07-31T12:54:13.412Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "PL",
+        "teacher",
+        "exercise",
+        "electric"
+      ]
+    },
+    {
+      "id": "drive-14hOFCpXdtp-kf5T2ScZAKq0kCHljw2QQ",
+      "title": "2627-SUMMERCO-PHYS-IGCS1-MODB-EXERCISE-005_Student_v2.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · v2.1 — TT-APS 1.2.0 Diagram and Template Correction · Exercise 05 — Mains Electricity v2.1 · Release",
+      "url": "https://drive.google.com/file/d/14hOFCpXdtp-kf5T2ScZAKq0kCHljw2QQ/view?usp=drivesdk",
+      "created": "2026-07-31T12:54:00.694Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "PL",
+        "student",
+        "exercise",
+        "electric"
+      ]
+    },
+    {
+      "id": "drive-1bSj0r3x8CIuhuKwvSsE3uFb9KvHV5TyO",
+      "title": "2627-SUMMERCO-PHYS-IGCS1-MODB-EXERCISE-004_Teacher_v2.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · v2.1 — TT-APS 1.2.0 Diagram and Template Correction · Exercise 04 — Parallel Circuits v2.1 · Release",
+      "url": "https://drive.google.com/file/d/1bSj0r3x8CIuhuKwvSsE3uFb9KvHV5TyO/view?usp=drivesdk",
+      "created": "2026-07-31T12:53:18.376Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "PL",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1OfRPLupD6GiDLXH9YKjBmB0jTVjMCaqh",
+      "title": "2627-SUMMERCO-PHYS-IGCS1-MODB-EXERCISE-004_Student_v2.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · v2.1 — TT-APS 1.2.0 Diagram and Template Correction · Exercise 04 — Parallel Circuits v2.1 · Release",
+      "url": "https://drive.google.com/file/d/1OfRPLupD6GiDLXH9YKjBmB0jTVjMCaqh/view?usp=drivesdk",
+      "created": "2026-07-31T12:52:58.062Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "PL",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1PzxywAGGwgFsZOYSnoApVYJPh0M5gD-v",
+      "title": "2627-SUMMERCO-PHYS-IGCS1-MODB-EXERCISE-003_Teacher_v2.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · v2.1 — TT-APS 1.2.0 Diagram and Template Correction · Exercise 03 — Series Circuits v2.1 · Release",
+      "url": "https://drive.google.com/file/d/1PzxywAGGwgFsZOYSnoApVYJPh0M5gD-v/view?usp=drivesdk",
+      "created": "2026-07-31T12:52:14.815Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "PL",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1Y86zn5ZGTq6Dcl9YXsciNAevz3J5Scm5",
+      "title": "2627-SUMMERCO-PHYS-IGCS1-MODB-EXERCISE-003_Student_v2.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · v2.1 — TT-APS 1.2.0 Diagram and Template Correction · Exercise 03 — Series Circuits v2.1 · Release",
+      "url": "https://drive.google.com/file/d/1Y86zn5ZGTq6Dcl9YXsciNAevz3J5Scm5/view?usp=drivesdk",
+      "created": "2026-07-31T12:51:59.492Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "PL",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-133kDEKUCCVcYCAAn3ekgBv-t3evLZG8R",
+      "title": "2627-SUMMERCO-PHYS-IGCS1-MODB-EXERCISE-002_Teacher_v2.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · v2.1 — TT-APS 1.2.0 Diagram and Template Correction · Exercise 02 — Resistance v2.1 · Release",
+      "url": "https://drive.google.com/file/d/133kDEKUCCVcYCAAn3ekgBv-t3evLZG8R/view?usp=drivesdk",
+      "created": "2026-07-31T12:51:13.185Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "PL",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1VAmGqUwQgiOmnBngQIFrF19UuBIwb3kz",
+      "title": "2627-SUMMERCO-PHYS-IGCS1-MODB-EXERCISE-002_Student_v2.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · v2.1 — TT-APS 1.2.0 Diagram and Template Correction · Exercise 02 — Resistance v2.1 · Release",
+      "url": "https://drive.google.com/file/d/1VAmGqUwQgiOmnBngQIFrF19UuBIwb3kz/view?usp=drivesdk",
+      "created": "2026-07-31T12:51:00.336Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "PL",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1SgBrqkMo7cc94JRa2KB0kOJP6ioqNDbM",
+      "title": "2627-SUMMERCO-PHYS-IGCS1-MODB-EXERCISE-001_Teacher_v2.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · v2.1 — TT-APS 1.2.0 Diagram and Template Correction · Exercise 01 — Current and Voltage v2.1 · Release",
+      "url": "https://drive.google.com/file/d/1SgBrqkMo7cc94JRa2KB0kOJP6ioqNDbM/view?usp=drivesdk",
+      "created": "2026-07-31T12:49:45.589Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "PL",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1nMaoma6aCcL7AwJUtN6e7asDF5zNob8_",
+      "title": "2627-SUMMERCO-PHYS-IGCS1-MODB-EXERCISE-001_Student_v2.1.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · v2.1 — TT-APS 1.2.0 Diagram and Template Correction · Exercise 01 — Current and Voltage v2.1 · Release",
+      "url": "https://drive.google.com/file/d/1nMaoma6aCcL7AwJUtN6e7asDF5zNob8_/view?usp=drivesdk",
+      "created": "2026-07-31T12:47:44.231Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "PL",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-19agSRZo8JgnHLEQQsYwaXZ3sp6gUgT_EhLKOhvYhl18",
+      "title": "00 Scope and Production Plan — Summer CO PHYS IG1 MOD A",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A",
+      "url": "https://docs.google.com/document/d/19agSRZo8JgnHLEQQsYwaXZ3sp6gUgT_EhLKOhvYhl18/edit?usp=drivesdk",
+      "created": "2026-07-31T11:23:39.032Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "PL"
+      ]
+    },
+    {
+      "id": "drive-1PhgZSVG4C0xcnC3QHVqTbajNKRd55v8T",
+      "title": "2627_SCO_PHYS_IGCS1_MOD_A_QUIZ_001_v2.3_TEACHER.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Quiz · Quiz 01 — Density, Pressure, Thermal Physics and Gas Laws",
+      "url": "https://drive.google.com/file/d/1PhgZSVG4C0xcnC3QHVqTbajNKRd55v8T/view?usp=drivesdk",
+      "created": "2026-07-31T11:18:36.530Z",
+      "tags": [
+        "Physics",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "quiz",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-1VOxakvjnao6WpNSVqn-Ighae0csdDe6t",
+      "title": "2627_SCO_PHYS_IGCS1_MOD_A_QUIZ_001_v2.3_STUDENT.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Quiz · Quiz 01 — Density, Pressure, Thermal Physics and Gas Laws",
+      "url": "https://drive.google.com/file/d/1VOxakvjnao6WpNSVqn-Ighae0csdDe6t/view?usp=drivesdk",
+      "created": "2026-07-31T11:18:23.661Z",
+      "tags": [
+        "Physics",
+        "NTK",
+        "Summer CO",
+        "student",
+        "quiz",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-1u3R1JlcElG-mjtHbZmZFyE_UZl4tCZCy",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_QUIZ-001_EQUATION-LIST_v4.5.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Quiz · Quiz 01 — Thermal Physics · Equation_List",
+      "url": "https://drive.google.com/file/d/1u3R1JlcElG-mjtHbZmZFyE_UZl4tCZCy/view?usp=drivesdk",
+      "created": "2026-07-31T10:45:00.830Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "quiz",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-1U7Pn4_GFCVWxOCsxh_DykizFYbCuFn5OC_jP_A3flHw",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_QUIZ-001 — Exact Minimal Equation Sheet v4.5 — Drive Source",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Quiz · Quiz 01 — Thermal Physics · Equation_List",
+      "url": "https://docs.google.com/document/d/1U7Pn4_GFCVWxOCsxh_DykizFYbCuFn5OC_jP_A3flHw/edit?usp=drivesdk",
+      "created": "2026-07-31T10:43:55.384Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "quiz",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-1EJnxrRwuZFgY597xKCtw-f3NUabxPx15",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_QUIZ-001_TEACHER_v4.5.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Quiz · Quiz 01 — Thermal Physics",
+      "url": "https://drive.google.com/file/d/1EJnxrRwuZFgY597xKCtw-f3NUabxPx15/view?usp=drivesdk",
+      "created": "2026-07-31T08:24:33.870Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "quiz",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-1GYL4KJfJhOWa_GjHOLxkwDnDIezlfaJ5",
+      "title": "2627_SCO_PHYS-IBH2_MOD-A_QUIZ-001_STUDENT_v4.5.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Quiz · Quiz 01 — Thermal Physics",
+      "url": "https://drive.google.com/file/d/1GYL4KJfJhOWa_GjHOLxkwDnDIezlfaJ5/view?usp=drivesdk",
+      "created": "2026-07-31T08:23:57.603Z",
+      "tags": [
+        "Physics",
+        "IB",
+        "NTK",
+        "Summer CO",
+        "student",
+        "quiz",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-1w7nG0nNkWNxQ32QTy2RZgj6bdZ2OYjOw",
+      "title": "2627_SCO_PHYS_IGCS1_MOD_A_EXERCISE_001_REVISION_v2.1_TEACHER.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Exercise · Exercise 01 — Revision: Density, Pressure, Thermal Physics and Gas Laws",
+      "url": "https://drive.google.com/file/d/1w7nG0nNkWNxQ32QTy2RZgj6bdZ2OYjOw/view?usp=drivesdk",
+      "created": "2026-07-31T03:17:27.805Z",
+      "tags": [
+        "Physics",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-1r-YKq1KJOqVEMFZhYhm-ZyVNuTTrQYQk",
+      "title": "2627_SCO_PHYS_IGCS1_MOD_A_EXERCISE_001_REVISION_v2.1_STUDENT.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Exercise · Exercise 01 — Revision: Density, Pressure, Thermal Physics and Gas Laws",
+      "url": "https://drive.google.com/file/d/1r-YKq1KJOqVEMFZhYhm-ZyVNuTTrQYQk/view?usp=drivesdk",
+      "created": "2026-07-31T03:17:14.717Z",
+      "tags": [
+        "Physics",
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise",
+        "thermal"
+      ]
+    },
+    {
+      "id": "drive-1la6xOslmuXMNN1NlGWJbggwSn6JPYjoR",
+      "title": "2627-CO-CS-CIE0478-TOPIC-7-8-EXERCISE-001_Student_v1.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · CS IGCSE · MOD A · Exercise · Exercise 01 — Pseudocode Selection, Iteration and Searching",
+      "url": "https://drive.google.com/file/d/1la6xOslmuXMNN1NlGWJbggwSn6JPYjoR/view?usp=drivesdk",
+      "created": "2026-07-31T02:28:57.251Z",
+      "tags": [
+        "GCSE",
+        "IGCSE",
+        "CIE",
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1DhSPZAVVKocFTvM8sfL8_JEEJ_hfyQ02",
+      "title": "2627-CO-CS-CIE0478-TOPIC-7-8-EXERCISE-001_Teacher_v1.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · CS IGCSE · MOD A · Exercise · Exercise 01 — Pseudocode Selection, Iteration and Searching",
+      "url": "https://drive.google.com/file/d/1DhSPZAVVKocFTvM8sfL8_JEEJ_hfyQ02/view?usp=drivesdk",
+      "created": "2026-07-31T02:28:19.380Z",
+      "tags": [
+        "GCSE",
+        "IGCSE",
+        "CIE",
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1r7R2I3uVDeeQIY3pE84E_ND-qGIxZ7am",
+      "title": "Quiz_01_Electricity_Teacher_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · Quiz · Quiz 01 — Electricity · v2.0 — TT-APS 1.2.0 Rebuild · Release",
+      "url": "https://drive.google.com/file/d/1r7R2I3uVDeeQIY3pE84E_ND-qGIxZ7am/view?usp=drivesdk",
+      "created": "2026-07-31T01:16:24.271Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "quiz",
+        "electric"
+      ]
+    },
+    {
+      "id": "drive-1w7CciV7a8TQ0eXd4cSfWl7k8SlNeuPEe",
+      "title": "Quiz_01_Electricity_Student_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · Quiz · Quiz 01 — Electricity · v2.0 — TT-APS 1.2.0 Rebuild · Release",
+      "url": "https://drive.google.com/file/d/1w7CciV7a8TQ0eXd4cSfWl7k8SlNeuPEe/view?usp=drivesdk",
+      "created": "2026-07-31T01:16:10.286Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "student",
+        "quiz",
+        "electric"
+      ]
+    },
+    {
+      "id": "drive-1SLvcIt9mmA8UYfkqydGYWnRMmSS_HlOw",
+      "title": "Exercise_05_Mains_Electricity_Teacher_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · Exercise · Exercise 05 — Mains Electricity · v2.0 — TT-APS 1.2.0 Rebuild · Release",
+      "url": "https://drive.google.com/file/d/1SLvcIt9mmA8UYfkqydGYWnRMmSS_HlOw/view?usp=drivesdk",
+      "created": "2026-07-31T01:15:26.351Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise",
+        "electric"
+      ]
+    },
+    {
+      "id": "drive-1NRyDKVXW2DOCuAIOiCQOmQotni3dsY4p",
+      "title": "Exercise_05_Mains_Electricity_Student_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · Exercise · Exercise 05 — Mains Electricity · v2.0 — TT-APS 1.2.0 Rebuild · Release",
+      "url": "https://drive.google.com/file/d/1NRyDKVXW2DOCuAIOiCQOmQotni3dsY4p/view?usp=drivesdk",
+      "created": "2026-07-31T01:15:13.776Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise",
+        "electric"
+      ]
+    },
+    {
+      "id": "drive-1IEXrId1GbjikJJl-w_Oel91suFVb-Pmf",
+      "title": "Exercise_04_Parallel_Circuits_Teacher_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · Exercise · Exercise 04 — Parallel Circuits · v2.0 — TT-APS 1.2.0 Rebuild · Release",
+      "url": "https://drive.google.com/file/d/1IEXrId1GbjikJJl-w_Oel91suFVb-Pmf/view?usp=drivesdk",
+      "created": "2026-07-31T01:14:31.085Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-15dXQ-d9xzjl99Qk4mW1Qv__ZPURKY3Jo",
+      "title": "Exercise_04_Parallel_Circuits_Student_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · Exercise · Exercise 04 — Parallel Circuits · v2.0 — TT-APS 1.2.0 Rebuild · Release",
+      "url": "https://drive.google.com/file/d/15dXQ-d9xzjl99Qk4mW1Qv__ZPURKY3Jo/view?usp=drivesdk",
+      "created": "2026-07-31T01:14:19.043Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-14uxf4hZaqM5OXQ6aAtett3efk2_2gFzm",
+      "title": "Exercise_03_Series_Circuits_Teacher_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · Exercise · Exercise 03 — Series Circuits · v2.0 — TT-APS 1.2.0 Rebuild · Release",
+      "url": "https://drive.google.com/file/d/14uxf4hZaqM5OXQ6aAtett3efk2_2gFzm/view?usp=drivesdk",
+      "created": "2026-07-31T01:13:39.125Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1nWtSGUjG_E9z0IjcjiEVIJWWiFt1y5db",
+      "title": "Exercise_03_Series_Circuits_Student_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · Exercise · Exercise 03 — Series Circuits · v2.0 — TT-APS 1.2.0 Rebuild · Release",
+      "url": "https://drive.google.com/file/d/1nWtSGUjG_E9z0IjcjiEVIJWWiFt1y5db/view?usp=drivesdk",
+      "created": "2026-07-31T01:13:20.495Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1wcXLtXsD5Fba58dJ14Cc19k0W2_4nENF",
+      "title": "Exercise_02_Resistance_Teacher_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · Exercise · Exercise 02 — Resistance · v2.0 — TT-APS 1.2.0 Rebuild · Release",
+      "url": "https://drive.google.com/file/d/1wcXLtXsD5Fba58dJ14Cc19k0W2_4nENF/view?usp=drivesdk",
+      "created": "2026-07-31T01:12:42.628Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1GqxmBS0647LuoBXbLh3TNY3qSri_Std-",
+      "title": "Exercise_02_Resistance_Student_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · Exercise · Exercise 02 — Resistance · v2.0 — TT-APS 1.2.0 Rebuild · Release",
+      "url": "https://drive.google.com/file/d/1GqxmBS0647LuoBXbLh3TNY3qSri_Std-/view?usp=drivesdk",
+      "created": "2026-07-31T01:12:28.905Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1ZGSRWWfSwNzU6aVkM18MrH6RYCMdSYAJ",
+      "title": "Exercise_01_Current_and_Voltage_Teacher_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · Exercise · Exercise 01 — Current and Voltage · v2.0 — TT-APS 1.2.0 Rebuild · Release",
+      "url": "https://drive.google.com/file/d/1ZGSRWWfSwNzU6aVkM18MrH6RYCMdSYAJ/view?usp=drivesdk",
+      "created": "2026-07-31T01:11:42.856Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "teacher",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1IgeWi5egaXNBZL8k6yO4aeg7sWiWxVv2",
+      "title": "Exercise_01_Current_and_Voltage_Student_v2.0.pdf",
+      "source": "Teaching Tool",
+      "kind": "pdf",
+      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD B · Exercise · Exercise 01 — Current and Voltage · v2.0 — TT-APS 1.2.0 Rebuild · Release",
+      "url": "https://drive.google.com/file/d/1IgeWi5egaXNBZL8k6yO4aeg7sWiWxVv2/view?usp=drivesdk",
+      "created": "2026-07-31T01:11:27.786Z",
+      "tags": [
+        "NTK",
+        "Summer CO",
+        "student",
+        "exercise"
+      ]
+    },
+    {
+      "id": "drive-1SPqkxFs2yolXhVD-yU3K-VUWNXWCcdjENm7MC03Alok",
+      "title": "01 Drive Publication Closeout — Summer CO PHYS IG2 MOD B",
       "source": "Teaching Tool",
       "kind": "doc",
       "group": "NTK · 2026-2027 · Summer CO · PHYS IG2 · MOD B",
-      "url": "https://docs.google.com/document/d/1rjMb1snv_8vPcrBFdroUA4hH94rz9IuLWKpNKnOevEE/edit?usp=drivesdk",
-      "created": "2026-07-30T17:27:46.972Z",
+      "url": "https://docs.google.com/document/d/1SPqkxFs2yolXhVD-yU3K-VUWNXWCcdjENm7MC03Alok/edit?usp=drivesdk",
+      "created": "2026-07-30T17:28:28.792Z",
       "tags": [
         "NTK",
         "Summer CO"
@@ -83,23 +679,6 @@
         "IB",
         "NTK",
         "Summer CO",
-        "exercise",
-        "thermal"
-      ]
-    },
-    {
-      "id": "drive-1F1tQkwSqK1EaUGYkFjhDCbv2kEzndHCg",
-      "title": "2627_SCO_PHYS_IGCS1_MOD_A_EXERCISE_001_REVISION_v2.0_STUDENT.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Exercise · Exercise 01 — Revision: Density, Pressure, Thermal Physics and Gas Laws",
-      "url": "https://drive.google.com/file/d/1F1tQkwSqK1EaUGYkFjhDCbv2kEzndHCg/view?usp=drivesdk",
-      "created": "2026-07-30T17:24:21.723Z",
-      "tags": [
-        "Physics",
-        "NTK",
-        "Summer CO",
-        "student",
         "exercise",
         "thermal"
       ]
@@ -640,59 +1219,6 @@
       ]
     },
     {
-      "id": "drive-17bbsCfQJUR_xMuTshjYYxLKPDe1RGVLg",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_QUIZ-001_EQUATION-LIST_v4.2.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Quiz · Quiz 01 — Thermal Physics · Equation_List",
-      "url": "https://drive.google.com/file/d/17bbsCfQJUR_xMuTshjYYxLKPDe1RGVLg/view?usp=drivesdk",
-      "created": "2026-07-30T07:38:49.361Z",
-      "tags": [
-        "Physics",
-        "IB",
-        "NTK",
-        "Summer CO",
-        "quiz",
-        "thermal"
-      ]
-    },
-    {
-      "id": "drive-1ibmtraw8KSaMeMCCT2xrbZ5aSI6Ak5uv",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_QUIZ-001_TEACHER_v4.2.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Quiz · Quiz 01 — Thermal Physics",
-      "url": "https://drive.google.com/file/d/1ibmtraw8KSaMeMCCT2xrbZ5aSI6Ak5uv/view?usp=drivesdk",
-      "created": "2026-07-30T07:37:08.160Z",
-      "tags": [
-        "Physics",
-        "IB",
-        "NTK",
-        "Summer CO",
-        "teacher",
-        "quiz",
-        "thermal"
-      ]
-    },
-    {
-      "id": "drive-1JOj1TYRZMA16ged9sxOdCp6pNDwq-4ye",
-      "title": "2627_SCO_PHYS-IBH2_MOD-A_QUIZ-001_STUDENT_v4.2.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IBH2 · MOD A · Quiz · Quiz 01 — Thermal Physics",
-      "url": "https://drive.google.com/file/d/1JOj1TYRZMA16ged9sxOdCp6pNDwq-4ye/view?usp=drivesdk",
-      "created": "2026-07-30T07:36:57.572Z",
-      "tags": [
-        "Physics",
-        "IB",
-        "NTK",
-        "Summer CO",
-        "student",
-        "quiz",
-        "thermal"
-      ]
-    },
-    {
       "id": "drive-1qqQc820GeDPdibCxuj0JEgYm9p0XAIR1",
       "title": "2627_SCO_PHYS-IGCS2_MOD-B_QUIZ-001_TEACHER_v1.0.pdf",
       "source": "Teaching Tool",
@@ -759,23 +1285,6 @@
       ]
     },
     {
-      "id": "drive-1rFQNYTXW3TnpQrLiN3-H31uTBzgZBD8q",
-      "title": "2627_SCO_PHYS_IGCS1_MOD_A_EXERCISE_001_REVISION_v1.1_TEACHER.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Exercise · Exercise 01 — Revision: Density, Pressure, Thermal Physics and Gas Laws",
-      "url": "https://drive.google.com/file/d/1rFQNYTXW3TnpQrLiN3-H31uTBzgZBD8q/view?usp=drivesdk",
-      "created": "2026-07-30T05:00:47.906Z",
-      "tags": [
-        "Physics",
-        "NTK",
-        "Summer CO",
-        "teacher",
-        "exercise",
-        "thermal"
-      ]
-    },
-    {
       "id": "drive-1A8HDKwAtkMgazH5JpYFYgCXkkagemxu7",
       "title": "IGCS1_MOD_B_Quiz_01_Electricity_Teacher_v1.0.pdf",
       "source": "Teaching Tool",
@@ -839,40 +1348,6 @@
         "student",
         "quiz",
         "fields"
-      ]
-    },
-    {
-      "id": "drive-1jk6AkYdh2ckn5c9QhLHYsoMb7vBJyVRn",
-      "title": "2627_SCO_PHYS_IGCS1_MOD_A_QUIZ_001_v1.0_TEACHER.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Quiz · Quiz 01 — Density, Pressure, Thermal Physics and Gas Laws",
-      "url": "https://drive.google.com/file/d/1jk6AkYdh2ckn5c9QhLHYsoMb7vBJyVRn/view?usp=drivesdk",
-      "created": "2026-07-30T03:50:01.706Z",
-      "tags": [
-        "Physics",
-        "NTK",
-        "Summer CO",
-        "teacher",
-        "quiz",
-        "thermal"
-      ]
-    },
-    {
-      "id": "drive-1BI-_hMOR0GaWUwDSgLOZxYV86kpvZnX5",
-      "title": "2627_SCO_PHYS_IGCS1_MOD_A_QUIZ_001_v1.0_STUDENT.pdf",
-      "source": "Teaching Tool",
-      "kind": "pdf",
-      "group": "NTK · 2026-2027 · Summer CO · PHYS IG1 · MOD A · Quiz · Quiz 01 — Density, Pressure, Thermal Physics and Gas Laws",
-      "url": "https://drive.google.com/file/d/1BI-_hMOR0GaWUwDSgLOZxYV86kpvZnX5/view?usp=drivesdk",
-      "created": "2026-07-30T03:49:46.907Z",
-      "tags": [
-        "Physics",
-        "NTK",
-        "Summer CO",
-        "student",
-        "quiz",
-        "thermal"
       ]
     },
     {
