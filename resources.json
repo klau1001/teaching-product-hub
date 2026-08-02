@@ -1,7 +1,32 @@
 {
-  "generatedAt": "2026-08-01T20:40:32.722675+00:00",
-  "resourceCount": 235,
+  "generatedAt": "2026-08-02T20:43:26.106109+00:00",
+  "resourceCount": 236,
   "resources": [
+    {
+      "id": "drive-1gnrO_Cocj_qVSGSBy2BSHTxr25QxT-ZTdH1b-fGksYA",
+      "title": "00 NTK Operational Library Router",
+      "source": "Teaching Tool",
+      "kind": "doc",
+      "group": "NTK",
+      "url": "https://docs.google.com/document/d/1gnrO_Cocj_qVSGSBy2BSHTxr25QxT-ZTdH1b-fGksYA/edit?usp=drivesdk",
+      "created": "2026-08-02T13:07:58.960Z",
+      "tags": [
+        "IB",
+        "NTK"
+      ]
+    },
+    {
+      "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
+      "title": "01 NTK Master Index",
+      "source": "Teaching Tool",
+      "kind": "sheet",
+      "group": "NTK",
+      "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
+      "created": "2026-08-02T00:39:29.765Z",
+      "tags": [
+        "NTK"
+      ]
+    },
     {
       "id": "drive-13XIjpRdhBa9ap5ktgY9j6nsHxwQZPEQpxtPQAP3JjAs",
       "title": "00 Course Scope and Product Plan — Summer CO GCEAS MOD B",
@@ -1714,18 +1739,6 @@
         "teacher",
         "exercise",
         "projectile motion"
-      ]
-    },
-    {
-      "id": "drive-1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw",
-      "title": "01 NTK Master Index",
-      "source": "Teaching Tool",
-      "kind": "sheet",
-      "group": "NTK",
-      "url": "https://docs.google.com/spreadsheets/d/1BmqcWhhZLN616rSzBbLquOm6pbFWzKLofQx0ZMy2zxw/edit?usp=drivesdk",
-      "created": "2026-07-30T07:53:35.991Z",
-      "tags": [
-        "NTK"
       ]
     },
     {
