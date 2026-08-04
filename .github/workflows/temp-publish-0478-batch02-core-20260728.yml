@@ -1,0 +1,35 @@
+name: Temporary publish 0478 Batch 02 core
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode and validate core package
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          base64 -d tmp/upee_0478_s25_21_batch02_core_r1.zip.b64 > out/UPEE_0478_S25_21_BATCH02_CORE_ONLY_R1.zip
+          unzip -t out/UPEE_0478_S25_21_BATCH02_CORE_ONLY_R1.zip
+          unzip -q out/UPEE_0478_S25_21_BATCH02_CORE_ONLY_R1.zip -d out/unpacked
+          test "$(find out/unpacked -type f | wc -l)" -eq 13
+          stat -c 'decoded_bytes=%s' out/UPEE_0478_S25_21_BATCH02_CORE_ONLY_R1.zip
+          sha256sum out/UPEE_0478_S25_21_BATCH02_CORE_ONLY_R1.zip > out/TRANSPORT_SHA256.txt
+      - name: Upload core package
+        uses: actions/upload-artifact@v4
+        with:
+          name: upee-0478-s25-21-batch02-core-r1
+          path: out/
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 0
