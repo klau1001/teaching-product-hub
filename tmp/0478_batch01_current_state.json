@@ -1,0 +1,38 @@
+{
+  "batch_id": "Batch_01_CAIE_IGCSE_CS_0478_S25_22",
+  "counts": {
+    "active_assessed_nodes": 18,
+    "active_questions": 9,
+    "generated_response_requirements": 23,
+    "response_components": 31,
+    "source_response_surfaces": 23,
+    "syllabus_mappings": 18,
+    "withdrawn_questions": 1
+  },
+  "gates": {
+    "dependency_validated": true,
+    "difficulty_filter_eligible": false,
+    "markscheme_literal_verified": true,
+    "renderer_input_ready": false,
+    "renderer_release_eligible": false,
+    "response_space_provenance_terminal": true,
+    "search_promotion_eligible": false,
+    "source_verified": true,
+    "syllabus_mapped": true
+  },
+  "hashes": {
+    "response_space_core": "36df6adcc330e592d16040d35910f3c9832c0effe73b2c389006c38e46ec1dc0",
+    "syllabus_mapping_core": "f51f1ff6099fa1ac15f4598a42e2ee0708fc65781b875ca846202382ae1409f0",
+    "syllabus_scope_snapshot": "613981bd6fba2beb36cb4fd596a8186c3ecc55448ea2abfee97501c4cbfb827d"
+  },
+  "next_authorised_work": "Materialize question-capsule and search-document records from the locked source-review, dependency, response-space and syllabus-mapping layers; run deterministic and independent release audits before search promotion.",
+  "pair_id": "CAIE_IGCSE_COMPUTER_SCIENCE_0478_S25_22",
+  "schema_version": "batch-state-1.0",
+  "status": "SOURCE_VERIFIED_MAPPED_RESPONSE_SPACE_COMPLETE_SEARCH_MATERIALIZATION_PENDING",
+  "updated_at": "2026-07-27T22:35:00+08:00",
+  "withdrawn_question": {
+    "question": "Q10",
+    "selection_eligible": false,
+    "status": "WITHDRAWN_BY_MARK_SCHEME"
+  }
+}
