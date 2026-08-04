@@ -6,6 +6,11 @@ on:
       - acd-068-fetch
     paths:
       - .github/workflows/acd-068-fetch.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/acd-068-fetch.yml
 
 permissions:
   contents: read
